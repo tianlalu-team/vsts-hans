@@ -56,6 +56,8 @@ I18N.conf = {
         'ms-CommandBarItem-link', // 链接按钮
         'ms-Dropdown-item', // 还是操作按钮
         "ms-DetailsHeader-cell", // 表格的表头
+        "members-title-div", // 项目首页成员标题
+        "activity-panel", // 项目首页活动面板
     ],
 
     /**
@@ -160,6 +162,8 @@ I18N.zh = {
             //"Runs" : "测试",
             //"Machines" : "测试",
             //"Load test" : "测试",
+
+            "Packages": "包"
         },
     },
 
@@ -416,7 +420,7 @@ I18N.zh = {
             "Stories": "用户故事",
         }
     },
-    'ms-Dropdown-item': {
+    "ms-Dropdown-item": {
         "static": {
             "Assigned to me": "指派给我",
             "Following": "我跟进的",
@@ -425,10 +429,26 @@ I18N.zh = {
             "Recently updated": "最近更新",
             "Recently completed": "最近完成",
             "Recently created": "最近创建",
+            "1 Day": "1 天",
+            "7 Days": "7 天",
+            "30 Days": "30 天"
         },
     },
     "ms-DetailsHeader-cell": {
         "static": {},
+    },
+    "members-title-div": {
+        "static": {
+            "Members": "成员"
+        }
+    },
+    "activity-panel": {
+        "static": {
+            "Activity": "活动",
+            "1 Day": "1 天",
+            "7 Days": "7 天",
+            "30 Days": "30 天"
+        }
     },
 };
 
