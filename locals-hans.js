@@ -31,6 +31,8 @@ I18N.conf = {
         'git-tags-page', // Code -> Tags
         'versioncontrol-pullrequest-list-view', // Code -> PRs
         'versioncontrol-pullrequest-create-view', // Code -> PRs -> Create
+        'build-title-bar', // build
+        'pivotTab-link',
 
         // Widgets
         'assigned-to-me', // 我的任务
@@ -435,7 +437,18 @@ I18N.zh = {
         },
     },
     "ms-DetailsHeader-cell": {
-        "static": {},
+        "static": {
+            'Requested by me': '由我请求',
+            'Status': '状态',
+            'Triggered by': '触发',
+            'History': '历史',
+            'Folder / Name': '文件夹/名称',
+            'Default branch summary': '默认分支摘要',
+            'Queued': '排队',
+            'Running': '运行',
+            '7-day pass rate': '最近7天成功率',
+            'Last built':'最近一次运行'
+        },
     },
     "members-title-div": {
         "static": {
@@ -448,6 +461,24 @@ I18N.zh = {
             "1 Day": "1 天",
             "7 Days": "7 天",
             "30 Days": "30 天"
+        }
+    },
+    'build-title-bar': {
+        'static': {
+            'Build Definitions': 'Build 定义',
+            'Build ID or build number': 'Build Id 或内部版本号',
+            'New': '新建',
+            'Import': '导入',
+            'Security': '安全',
+            'Manage folders':'管理文件夹',
+            'Help': '帮助',
+        }
+    },
+    'pivotTab-link': {
+        'static': {
+            'Mine': '我的',
+            'Definitions': '定义',
+            'Queued': '排队'
         }
     },
 };
