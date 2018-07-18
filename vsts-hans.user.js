@@ -2,12 +2,13 @@
 // @name         VSTS 汉化插件
 // @description  汉化 VSTS 界面的部分菜单及内容!
 // @copyright    2018, 天啦噜天团 (https://tianlalu-team.github.io/)
+// @license      MIT
 // @icon         https://vsassetscdn.azure.cn/content/icons/favicon.ico
-// @version      0.1.1
+// @version      1.0.0
 // @author       天啦噜天团
 // @homepageURL  https://tianlalu-team.github.io/
-// @updateURL    https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/vsts-hans.js
-// @downloadURL  https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/vsts-hans.js
+// @updateURL    https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/vsts-hans.user.js
+// @downloadURL  https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/vsts-hans.user.js
 // @match        https://*.visualstudio.com/*
 // @require      https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js
 // @require      https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/locals-hans.js
