@@ -106,8 +106,8 @@ I18N.conf = {
 };
 
 //I18N.conf.reComponentClass = eval('/\b('+I18N.conf.reComponentClasses.join("|")+')\b/');
-I18N.conf.reComponentClass = eval('/('+I18N.conf.reComponentClasses.join("|")+')/');
-I18N.conf.reIgnoreClass = eval('/('+I18N.conf.reIgnoreClasses.join("|")+')/');
+I18N.conf.reComponentClass = eval('/(' + I18N.conf.reComponentClasses.join("|") + ')/');
+I18N.conf.reIgnoreClass = eval('/(' + I18N.conf.reIgnoreClasses.join("|") + ')/');
 
 I18N.zh = {
     "title": { // 标题翻译
@@ -130,33 +130,33 @@ I18N.zh = {
     /* 全局资源定义, 通过 $.extend() 方法进行复用 */
     "global-navigation": { // 全局导航
         "static": {
-            "Overview" : "总览",
+            "Overview": "总览",
             "Summary": "概要",
             "Dashboards": "仪表板",
 
-            "Work" : "工作",
+            "Work": "工作",
             "Work Items": "工单",
             "Boards": "看板",
             "Backlogs": "积压",
             "Sprints": "冲刺",
             "Queries": "筛选器",
 
-            "Code" : "代码",
-            "Files" : "代码浏览",
-            "Commits" : "查看提交",
-            "Pushes" : "推送记录",
-            "Branches" : "分支",
-            "Tags" : "标签",
-            "Pull Requests" : "拉取请求",
+            "Code": "代码",
+            "Files": "代码浏览",
+            "Commits": "查看提交",
+            "Pushes": "推送记录",
+            "Branches": "分支",
+            "Tags": "标签",
+            "Pull Requests": "拉取请求",
 
-            "Build and release" : "构建和发布",
-            "Builds" : "构建",
-            "Releases" : "发布",
-            "Library" : "库",
-            "Task groups" : "任务分组",
-            "Deployment groups" : "部署分组",
+            "Build and release": "构建和发布",
+            "Builds": "构建",
+            "Releases": "发布",
+            "Library": "库",
+            "Task groups": "任务分组",
+            "Deployment groups": "部署分组",
 
-            "Test" : "测试",
+            "Test": "测试",
             //"Test Plans*" : "测试计划*",
             //"Runs" : "测试",
             //"Machines" : "测试",
@@ -343,7 +343,7 @@ I18N.zh = {
             "Project settings": "项目设置",
         }
     },
-    'grid-header-column':{ // 动态加载的表头列
+    'grid-header-column': { // 动态加载的表头列
         "static": {
         }
     },
@@ -395,7 +395,13 @@ I18N.zh = {
             "More Actions...": "更多...",
             "Remove from favorites": "取消收藏",
             "Add to favorites": "收藏",
-
+            "Show less information": "折叠",
+            "Pin item": "固定到快捷栏",
+            "Unpin item": "从快捷栏取消固定",
+            'Back to "Assigned to me" tab (Alt + Q)': '返回"指派给我"页面(Alt + Q)',
+            "Back to Work Items": "返回到工单",
+            'Previous work item in the "Assigned to me" tab (Alt + P)': '"指派给我"页面的上一个工单 (Alt + P)',
+            'Next work item in the "Assigned to me" tab (Alt + N)': '"指派给我"页面的下一个工单 (Alt + N)'
         }
     },
     'ms-Button-textContainer': {
