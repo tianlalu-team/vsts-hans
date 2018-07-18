@@ -20,7 +20,7 @@ I18N.conf = {
         'wiki-container',           // Overview -> Wiki
         'work-items-hub-view',       // Work -> Work Items
         'work-items-hub-row',        // Work -> Work Items/Row
-        'board-content-view',          // Work -> Boards
+        'board-content-view',          // Work -> Boards / https://{account}.visualstudio.com/{project}/{team}/_boards
         'backlog-content-view',        // Work -> Backlogs
         'sprint-view-container',       // Note: 和 .internal-content-host 同级，应该是一个BUG
         'queries-view',                  // NOTE: 监听不到这个节点被新增，此组件的翻译只能递归节点时来检查节点是否为组件
@@ -31,6 +31,8 @@ I18N.conf = {
         'git-tags-page',  // Code -> Tags
         'versioncontrol-pullrequest-list-view',  // Code -> PRs
         'versioncontrol-pullrequest-create-view',  // Code -> PRs -> Create
+
+        'work-item-form-main',  // 工单的编辑页面 / https://{account}.visualstudio.com/{project}/_workitems/edit/{id}
 
         // Widgets
         'assigned-to-me',  // 我的任务
