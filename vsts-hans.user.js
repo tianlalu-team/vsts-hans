@@ -1,4 +1,5 @@
 // ==UserScript==
+// @namespace    vsts-hans
 // @name         VSTS 汉化插件
 // @description  汉化 VSTS 界面的部分菜单及内容!
 // @copyright    2018, 天啦噜天团 (https://tianlalu-team.github.io/)
