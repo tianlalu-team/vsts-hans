@@ -7,51 +7,51 @@ I18N.conf = {
      */
     reComponentClasses: [
         // https://{account}.visualstudio.com/
-        'organization-navigation',    // 左侧导航
-        'suite-me-page-view',         // 页面主体
+        'organization-navigation', // 左侧导航
+        'suite-me-page-view', // 页面主体
 
 
         // 页面级组件: 均位于 #vss_1 .internal-content-host 下
         // https://{account}.visualstudio.com/{project}/**
-        'vss-HubBreadcrumb',    // 面包屑导航
+        'vss-HubBreadcrumb', // 面包屑导航
 
-        'project-overview-page-container',  // Overview -> Summary
-        'dashboard-landing',          // Overview -> Dashboards
-        'wiki-container',           // Overview -> Wiki
-        'work-items-hub-view',       // Work -> Work Items
-        'work-items-hub-row',        // Work -> Work Items/Row
-        'board-content-view',          // Work -> Boards
-        'backlog-content-view',        // Work -> Backlogs
-        'sprint-view-container',       // Note: 和 .internal-content-host 同级，应该是一个BUG
-        'queries-view',                  // NOTE: 监听不到这个节点被新增，此组件的翻译只能递归节点时来检查节点是否为组件
-        'versioncontrol-explorer-view',  // Note: 不在 .internal-content-host 下
-        'versioncontrol-git-history-view',  // Code -> Commites
-        'versioncontrol-pushes-view',  // Code -> Pushers
-        'vc-newbranches-view',  // Code -> Branches
-        'git-tags-page',  // Code -> Tags
-        'versioncontrol-pullrequest-list-view',  // Code -> PRs
-        'versioncontrol-pullrequest-create-view',  // Code -> PRs -> Create
+        'project-overview-page-container', // Overview -> Summary
+        'dashboard-landing', // Overview -> Dashboards
+        'wiki-container', // Overview -> Wiki
+        'work-items-hub-view', // Work -> Work Items
+        'work-items-hub-row', // Work -> Work Items/Row
+        'board-content-view', // Work -> Boards
+        'backlog-content-view', // Work -> Backlogs
+        'sprint-view-container', // Note: 和 .internal-content-host 同级，应该是一个BUG
+        'queries-view', // NOTE: 监听不到这个节点被新增，此组件的翻译只能递归节点时来检查节点是否为组件
+        'versioncontrol-explorer-view', // Note: 不在 .internal-content-host 下
+        'versioncontrol-git-history-view', // Code -> Commites
+        'versioncontrol-pushes-view', // Code -> Pushers
+        'vc-newbranches-view', // Code -> Branches
+        'git-tags-page', // Code -> Tags
+        'versioncontrol-pullrequest-list-view', // Code -> PRs
+        'versioncontrol-pullrequest-create-view', // Code -> PRs -> Create
 
         // Widgets
-        'assigned-to-me',  // 我的任务
-        'buildchart-container',  // 构建图表
+        'assigned-to-me', // 我的任务
+        'buildchart-container', // 构建图表
         'new-work-item',
 
         // Dialogs
-        'new-workitem-dialog',   // 创建工单
-        'vc-create-tag-dialog',  // 创建代码 Tag  NOTE: 此节点不直接添加，此组件的翻译只能递归节点时来检查节点是否为组件
+        'new-workitem-dialog', // 创建工单
+        'vc-create-tag-dialog', // 创建代码 Tag  NOTE: 此节点不直接添加，此组件的翻译只能递归节点时来检查节点是否为组件
 
         // 区域刷新
-        "zerodata",            // 列表没有数据时
-        'grid-header-column',  // 动态加载的表头列
-        'edit-readme-cta',    // Overview -> Summary
-        'wiki-edit',          // Overview -> Wiki
-        'wiki-new-page',      // Overview -> Wiki
-        'commandbar-item',    // 菜单项, 有大量菜单项被动态添加，尝试一下统一翻译
+        "zerodata", // 列表没有数据时
+        'grid-header-column', // 动态加载的表头列
+        'edit-readme-cta', // Overview -> Summary
+        'wiki-edit', // Overview -> Wiki
+        'wiki-new-page', // Overview -> Wiki
+        'commandbar-item', // 菜单项, 有大量菜单项被动态添加，尝试一下统一翻译
         'vss-PickList--row', //'vss-PickList--element',  // 表格的下拉筛选器，应该时这个吧，先试试
         'vss-PickList--noItemsText', // 下拉框没有数据时的提示
         'ms-ContextualMenu-item', // 左侧菜单鼠标悬浮滑出子菜单
-        'ms-Tooltip',   // 浮动提示
+        'ms-Tooltip', // 浮动提示
         'ms-Button-textContainer', // 补充按钮文本
         'ms-CommandBarItem-link', // 链接按钮
         'ms-Dropdown-item', // 还是操作按钮
@@ -123,8 +123,7 @@ I18N.zh = {
             "Off": "关闭",
             "On": "开启",
         },
-        "regexp": [
-        ],
+        "regexp": [],
     },
 
     /* 全局资源定义, 通过 $.extend() 方法进行复用 */
@@ -218,8 +217,7 @@ I18N.zh = {
 
     /* 页面非动态加载内容的翻译 */
     "page": {
-        "static": {
-        }
+        "static": {}
     },
 
     // 组件翻译
@@ -254,8 +252,7 @@ I18N.zh = {
     },
 
     "vss-HubBreadcrumb": {
-        "static": {
-        },
+        "static": {},
     },
 
     "work-items-hub-view": { // https://{account}.visualstudio.com/{project}/_workitems/
@@ -276,20 +273,18 @@ I18N.zh = {
             "Assigned to": "指派到人",
 
         },
-        "regexp": [
-        ],
+        "regexp": [],
     },
     'work-items-hub-row': {
-        "static": {
-        },
+        "static": {},
     },
 
     "project-overview-page-container": {
         "static": {
             "Project Information": "项目信息",
-            "Remove from favorites": "取消收藏",  // 翻译失败
+            "Remove from favorites": "取消收藏", // 翻译失败
             "Readme": "自述",
-            "Edit in Wiki": "在 Wiki 中编辑此页",  // 翻译失败, 会再次动态生成节点 .edit-readme-cta
+            "Edit in Wiki": "在 Wiki 中编辑此页", // 翻译失败, 会再次动态生成节点 .edit-readme-cta
             "Change": "切换页面",
 
 
@@ -344,12 +339,10 @@ I18N.zh = {
         }
     },
     'grid-header-column': { // 动态加载的表头列
-        "static": {
-        }
+        "static": {}
     },
     'vss-PickList--row': { //'vss-PickList--element': {
-        "static": {
-        }
+        "static": {}
     },
     'vss-PickList--noItemsText': {
         "static": {
@@ -435,8 +428,7 @@ I18N.zh = {
         },
     },
     "ms-DetailsHeader-cell": {
-        "static": {
-        },
+        "static": {},
     },
 };
 
@@ -444,7 +436,7 @@ I18N.zh = {
 $.extend(true, I18N.zh["page"], I18N.zh["global-navigation"]);
 $.extend(true, I18N.zh["commandbar-item"], I18N.zh["global-navigation"]);
 $.extend(true, I18N.zh["vss-HubBreadcrumb"], I18N.zh["global-navigation"]);
-$.extend(true, I18N.zh["vss-PickList--row"/*"vss-PickList--element"*/], I18N.zh["global-work-item-type"], I18N.zh["global-work-item-state"], I18N.zh["global-work-item-assigned"]);
+$.extend(true, I18N.zh["vss-PickList--row" /*"vss-PickList--element"*/ ], I18N.zh["global-work-item-type"], I18N.zh["global-work-item-state"], I18N.zh["global-work-item-assigned"]);
 $.extend(true, I18N.zh["ms-Button-textContainer"], I18N.zh["global-btn-text"]);
 $.extend(true, I18N.zh["ms-ContextualMenu-item"], I18N.zh["global-navigation"], I18N.zh["global-work-item-type"], I18N.zh["global-btn-text"]);
 $.extend(true, I18N.zh["ms-CommandBarItem-link"], I18N.zh["global-navigation"], I18N.zh["global-work-item-type"], I18N.zh["global-btn-text"]);
