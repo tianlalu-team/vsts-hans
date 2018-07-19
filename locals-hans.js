@@ -69,7 +69,7 @@ I18N.conf = {
 I18N.zh = {
 
     //#region 标题翻译
-    "title": {  // 页面标题翻译
+    "__title": {  // 页面标题翻译
         "static": {
         },
         "regexp": [
