@@ -182,9 +182,13 @@
 
         if (node.nodeType === Node.TEXT_NODE) {
             // 跳过文本内容长度为1的文本
-            if (node['data'] !== null && node['data'].length === 1)
+            var text = node['data'];
+            if (text !== null && text.length === 1)
                 return true;
-            // TODO: 全是数字的文本节点也要过滤
+
+            // 全是数字的文本节点也要过滤
+            if (/\d+/.test(text))
+                return true;
         }
     }
 
