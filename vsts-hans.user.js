@@ -59,6 +59,7 @@
 
     // 在一个节点作为子节点被插入到另一个节点中时触发;
     document.addEventListener('DOMNodeInserted', function (e) {
+        // console.info('动态增加节点:', e.target, e.target.outerHTML);
         walk(e.target);
     });
 
@@ -72,8 +73,9 @@
     document.addEventListener('DOMCharacterDataModified', function (e) {
         var str = translate(e.newValue, '__common'); // 翻译已知组件
         if (str !== false || str === e.newValue) { // 组件翻译完成
-            // console.log('文本变更', e);
             e.target['data'] = str;
+        } else {
+            // console.log('文本变更', e);
         }
     });
 
@@ -284,6 +286,7 @@
             return str;
         }
 
+        // console.log('尝试使用正则表达式翻译:', component, key)
         // 正则翻译
         res = I18N[lang][component].regexp;
         if (res) {
