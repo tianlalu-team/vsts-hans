@@ -70,61 +70,19 @@ I18N.conf = {
     reIgnoreClasses: [
         'work-item-title', // 工单列表中的标题列
     ],
-
-    /**
-     * 要翻译的页面正则
-     */
-    rePageClass: /\b(vis-public|page-(dashboard|profile|account|new-repo|create-org)|homepage|signup|session-authentication|oauth)\b/,
-
-    /**
-     * 匹配 pathname 页面的正则
-     *
-     * 通知页面 /notifications
-     * 关注页面 /watching
-     * 点赞页面 /stars
-     * 问题页面 /issues
-     * 拉取请求 /pulls
-     * 搜索页面 /search
-     * 趋势页面 /trending
-     * 展示页面 /showcases
-     * 导入仓库 /new/import
-     * 首页 /
-     */
-    rePagePath: /\/(?:(?:helios\/)?($|_dashboards|_wiki|_workitems|_boards|_backlogs|_sprints|_testManagement))?/,
-
-    /**
-     * 匹配 url 页面的正则
-     *
-     * 代码片段页面 gist
-     */
-    rePageUrl: /(gist)\.visualstudio.com/,
-
-    /**
-     * 忽略区域的 class 正则
-     *
-     * 面包屑 breadcrumb
-     * 文件列表 files js-navigation-container js-active-navigation-container
-     * 代码高亮 highlight tab-size js-file-line-container
-     * 代码差异 data highlight blob-wrapper
-     * wiki内容 markdown-body
-     */
-    reIgnore: /(files js-navigation-container|highlight tab-size|highlight blob-wrapper|markdown-body)/,
 };
 
-//I18N.conf.reComponentClass = eval('/\b('+I18N.conf.reComponentClasses.join("|")+')\b/');
-I18N.conf.reComponentClass = eval('/(' + I18N.conf.reComponentClasses.join("|") + ')/');
-I18N.conf.reIgnoreClass = eval('/(' + I18N.conf.reIgnoreClasses.join("|") + ')/');
-
 I18N.zh = {
-    "title": { // 标题翻译
-        "static": { // 静态翻译
+
+    "title": {  // 页面标题翻译
+        "static": {
         },
-        "regexp": [ // 正则翻译
+        "regexp": [
         ],
     },
 
-    "pubilc": { // 公共区域翻译
-        "static": { // 静态翻译
+    "pubilc": {  // 公共内容翻译
+        "static": {
             "Click": "点击",
             "Off": "关闭",
             "On": "开启",
@@ -132,7 +90,10 @@ I18N.zh = {
         "regexp": [],
     },
 
-    /* 全局资源定义, 通过 $.extend() 方法进行复用 */
+    /**
+     * 全局资源定义, 以'_global'开头, 通过对象扩展的方式扩展到组件翻译资源中，例如:
+     *    $.extend(true, I18N.zh["page"], I18N.zh["_global-navigation"]);
+     */
     "global-navigation": { // 全局导航
         "static": {
             "Overview": "总览",

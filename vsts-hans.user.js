@@ -29,6 +29,13 @@
 
     var lang = 'zh'; // 中文
 
+    // 构建正则表达式
+    // I18N.conf.reComponentClasses = eval('/(' + Object.keys(I18N[lang]).join("|") + ')/');
+    I18N.conf.reComponentClasses = eval('/\\b(' + Object.keys(I18N[lang]).join("|") + ')\\b/');
+    I18N.conf.reIgnore = eval('/(' + I18N.conf.reIgnoreClasses.join("|") + ')/');
+
+    console.log(I18N.conf.reComponentClasses);
+
     $(function ($) {
         walk("page", document.body); // 立即翻译页面, 解决部分组件无法通过监听动态内容的方式获取的问题
     });
@@ -87,7 +94,7 @@
      */
     function walk(component, node) {
         // 跳过 Wiki文档, Git 文件浏览, 代码显示等
-        if (I18N.conf.reIgnoreClass.test(node.className)) {
+        if (I18N.conf.reIgnore.test(node.className)) {
             //walk(component, node); // 遍历子节点
             return;
         }
