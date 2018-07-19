@@ -16,8 +16,8 @@ I18N.conf = {
     // "work-items-hub-row", // Work -> Work Items/Row
     // "board-content-view",          // Work -> Boards / https://{account}.visualstudio.com/{project}/{team}/_boards
     // "backlog-content-view", // Work -> Backlogs
-    // "sprint-view-container", // Note: 和 .internal-content-host 同级，应该是一个BUG
-    // "queries-view", // NOTE: 监听不到这个节点被新增，此组件的翻译只能递归节点时来检查节点是否为组件
+    // "sprint-view-container", // Note: 和 .internal-content-host 同级,应该是一个BUG
+    // "queries-view", // NOTE: 监听不到这个节点被新增,此组件的翻译只能递归节点时来检查节点是否为组件
     // "versioncontrol-explorer-view", // Note: 不在 .internal-content-host 下
     // "versioncontrol-git-history-view", // Code -> Commites
     //"versioncontrol-pushes-view", // Code -> Pushers
@@ -37,7 +37,7 @@ I18N.conf = {
 
     // // Dialogs
     // "new-workitem-dialog", // 创建工单
-    // "vc-create-tag-dialog", // 创建代码 Tag  NOTE: 此节点不直接添加，此组件的翻译只能递归节点时来检查节点是否为组件
+    // "vc-create-tag-dialog", // 创建代码 Tag  NOTE: 此节点不直接添加,此组件的翻译只能递归节点时来检查节点是否为组件
 
     // // 区域刷新
     // "zerodata", // 列表没有数据时
@@ -45,8 +45,8 @@ I18N.conf = {
     // "edit-readme-cta", // Overview -> Summary
     // "wiki-edit", // Overview -> Wiki
     // "wiki-new-page", // Overview -> Wiki
-    // "commandbar-item", // 菜单项, 有大量菜单项被动态添加，尝试一下统一翻译
-    // "vss-PickList--row", //"vss-PickList--element",  // 表格的下拉筛选器，应该时这个吧，先试试
+    // "commandbar-item", // 菜单项, 有大量菜单项被动态添加,尝试一下统一翻译
+    // "vss-PickList--row", //"vss-PickList--element",  // 表格的下拉筛选器,应该时这个吧,先试试
     // "vss-PickList--noItemsText", // 下拉框没有数据时的提示
     // "ms-ContextualMenu-item", // 左侧菜单鼠标悬浮滑出子菜单
     // "ms-Tooltip", // 浮动提示
@@ -67,27 +67,8 @@ I18N.conf = {
 };
 
 I18N.zh = {
-
-    //#region 标题翻译
-    "__title": {  // 页面标题翻译
-        "static": {
-        },
-        "regexp": [
-        ],
-    },
-    //#endregion
-
-    //#region 公共内容翻译
-    /**
-     * 此处定义一些公共的内容翻译
-     *    1. 通用的按钮动作翻译
-     *    2. 通用的概念名词翻译
-     *    3. 通用的工作流程状态翻译
-     *    4. 其他多处出现需要公用的简单单词
-     */
     "__common": {
         "static": {
-            // 通用的按钮动作翻译
             "@Me": "@我",
             
             "1 Day": "1 天",
@@ -97,7 +78,6 @@ I18N.zh = {
             "7 Days": "7 天",
             "30 Days": "30 天",
             "7-day pass rate": "最近7天成功率",
-            // "7 Days": "",
             
             "Admin settings": "设置",
             "Area Path": "功能分区",
@@ -251,7 +231,7 @@ I18N.zh = {
             "Packages": "包",
             "Project documentation": "项目说明文档",
             "Projects": "项目列表",
-            "Projects contain your source code, work items, automated builds and more.": "一个包含您的源代码，工作项，自动构建等相关信息的项目。",
+            "Projects contain your source code, work items, automated builds and more.": "一个包含您的源代码,工作项,自动构建等相关信息的项目。",
             "Project name": "项目名称",
             "Projects": "项目列表",
             "Project Information": "项目信息",
@@ -334,288 +314,7 @@ I18N.zh = {
             "Work Items": "工单",
         },
         "regexp": [
-            [/by 1 authors/, "由1个作者提交"],
-        ],
-    },
-    //#endregion
-
-    // //#region 团队首页
-    // /**
-    //  * https://{account}.visualstudio.com/ 团队首页
-    //  */
-    // "organization-navigation": { // 左侧菜单(团队清单)
-    //     "static": {
-    //     }
-    // },
-    // "suite-me-page-view": { // 主页面(团队项目列表)
-    //     "static": {
-    //     }
-    // },
-    // //#endregion
-
-    // /**
-    //  * 跨页面组件
-    //  */
-    // "vss-HubBreadcrumb": { // 顶部面包屑导航
-    //     "static": {},
-    // },
-
-    // /**
-    //  * 页面级组件翻译, 指的是一个页面的最主要的组件
-    //  * 通常都位于 $("div[data-renderedregion="content"] .internal-content-host") 下面，也有少量组件不在这个位置
-    //  * 不管在不在这个位置，其实不影响翻译，只是作为定位这个组件的参考
-    //  */
-
-    // //#region Overview -> Summary
-    // // https://{account}.visualstudio.com/{project}
-    // "project-overview-page-container": {
-    //     "static": {
-    //     },
-    //     "regexp": [
-    //     ]
-    // },
-    // //#endregion
-
-    // //#region Overview -> Dashboards
-    // // https://{account}.visualstudio.com/{project}/_dashboards
-    // "dashboard-landing": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-    // //#region Overview -> Wiki
-    // // https://{account}.visualstudio.com/{project}/_wiki
-    // "wiki-container": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-    // //#region Overview -> Work Items
-    // // https://{account}.visualstudio.com/{project}/_workitems/assignedtome
-    // // https://{account}.visualstudio.com/{project}/_workitems/following
-    // // https://{account}.visualstudio.com/{project}/_workitems/mentioned
-    // // https://{account}.visualstudio.com/{project}/_workitems/myactivity
-    // // https://{account}.visualstudio.com/{project}/_workitems/recentlyupdated
-    // // https://{account}.visualstudio.com/{project}/_workitems/recentlycompleted
-    // // https://{account}.visualstudio.com/{project}/_workitems/recentlycreated
-    // "work-items-hub-view": {
-    //     "static": {
-
-    //     },
-    //     "regexp": [],
-    // },
-    // // 工单列表中的每一行
-    // "work-items-hub-row": {
-    //     "static": {},
-    //     "regexp": [],
-    // },
-    // //#endregion
-
-    // //#region Work -> Boards & Work -> Backlogs
-    // // https://{account}.visualstudio.com/{project}/_boards/board/{team}
-    // // TODO: 该页面切换工单类型(史诗、特性、故事)时，重新加载子组件区域，父组件并不重新加载
-    // "board-content-view": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // // https://{account}.visualstudio.com/{project}/{team}/_boards/all
-    // // https://{account}.visualstudio.com/{project}/{team}_boards/mine
-    // // https://{account}.visualstudio.com/{project}/{team}/_backlogs/all
-    // // https://{account}.visualstudio.com/{project}/{team}/_backlogs/mine
-    // "directory-content": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-    // //#region Work -> Sprints
-    // // https://{account}.visualstudio.com/{project}/_sprints/all
-    // // https://{account}.visualstudio.com/{project}/_sprints/mine
-    // "sprints-directory-content": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // // https://{account}.visualstudio.com/{project}/_sprints/taskboard/{team}/Zeus/{iteration}
-    // "sprint-view-container": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-    // //#region Work -> Queries
-    // // https://{account}.visualstudio.com/{project}/_queries/all
-    // // https://{account}.visualstudio.com/{project}/_queries/favorites
-    // // NOTE: 监听不到这个节点被新增，此组件的翻译只能递归节点时来检查节点是否为组件
-    // "queries-view": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // // https://{account}.visualstudio.com/{project}/_queries/query/{queryid}
-    // "triage-view-hub-container": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-    // //#region Code -> Files
-    // // https://{account}.visualstudio.com/{project}/_git/{repo}
-    // "versioncontrol-explorer-view": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-    // //#region Code -> Commites
-    // // https://{account}.visualstudio.com/{project}/_git/{repo}/commits
-    // "versioncontrol-git-history-view": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-    // //#region Code -> Pushers
-    // // https://{account}.visualstudio.com/{project}/_git/{repo}/pushes
-    // "versioncontrol-pushes-view": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-    // //#region Code -> Branches
-    // // https://{account}.visualstudio.com/{project}/_git/{repo}/branches
-    // "vc-newbranches-view": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-    // //#region Code -> Tags
-    // // https://{account}.visualstudio.com/{project}/_git/{repo}/tags
-    // "git-tags-page": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-    // //#region Code -> Pull Requests
-    // // https://{account}.visualstudio.com/{project}/_git/{repo}/pullrequests
-    // "versioncontrol-pullrequest-list-view": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-
-    // // Code -> Pull Requests -> New pull requests
-    // // https://{account}.visualstudio.com/{project}/_git/{repo}/pullrequestcreate
-    // "versioncontrol-pullrequest-create-view": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-    // //#region Build & Release -> Build
-    // // https://{account}.visualstudio.com/{project}/_build
-    // "build-definitions-view": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // // Build & Release -> Build -> New
-    // // https://{account}.visualstudio.com/{project}/_apps/hub/ms.vss-ciworkflow.build-ci-hub
-    // "ci-getting-started-container": {
-    //     "static": {},
-    //     "regexp": []
-    // },
-    // //#endregion
-
-
-    // // 全局顶部搜索框
-    // "expandable-search-header":{
-    //     "static": {
-    //     },
-    //     "regexp": []
-    // },
-    // // 全局顶部搜索框操作提示
-    // "search-filter-caption": {
-    //     "static": {
-    //     }
-    // },
-
-    // /* 局部刷新内容 */
-    // "agile-hub-error": { //错误信息显示
-    //     "static": {},
-    //     "regexp": []
-    // },
-
-    // "zerodata": {
-    //     "static": {
-    //     }
-    // },
-    // "edit-readme-cta": {
-    //     "static": {
-    //     }
-    // },
-    // "wiki-edit": {
-    //     "static": {
-    //     }
-    // },
-    // "wiki-new-page": {
-    //     "static": {
-    //     }
-    // },
-    // "commandbar-item": {
-    //     "static": {
-    //     }
-    // },
-    // "grid-header-column": { // 动态加载的表头列
-    //     "static": {}
-    // },
-    // "vss-PickList--row": { //"vss-PickList--element": {
-    //     "static": {}
-    // },
-    // "vss-PickList--noItemsText": {
-    //     "static": {
-    //     }
-    // },
-    // "ms-ContextualMenu-item": {
-    //     "static": {
-    //     }
-    // },
-    // "ms-Tooltip": {
-    //     "static": {
-    //     }
-    // },
-    // "ms-Button-textContainer": {
-    //     "static": {
-
-    //     }
-    // },
-    // "ms-CommandBarItem-link": {
-    //     "static": {
-    //     }
-    // },
-    // "ms-Dropdown-item": {
-    //     "static": {
-    //     },
-    // },
-    // "ms-DetailsHeader-cell": {
-    //     "static": {
-    //     },
-    // },
-    // "members-title-div": {
-    //     "static": {
-    //     }
-    // },
-    // "activity-panel": {
-    //     "static": {
-    //     }
-    // },
-    // "build-title-bar": {
-    //     "static": {
-    //     }
-    // },
-    // "pivotTab-link": {
-    //     "static": {
-    //     }
-    // },
+            [/by 1 authors/, "由1个作者提交"]
+        ]
+    }
 };
