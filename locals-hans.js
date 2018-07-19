@@ -84,7 +84,7 @@ I18N.zh = {
      *    2. 通用的概念名词翻译
      *    3. 通用的工作流程状态翻译
      */
-    "pubilc": {
+    "__pubilc": {
         "static": {
             "Click": "点击",
             "Off": "关闭",
@@ -96,11 +96,11 @@ I18N.zh = {
 
     //#region 全局资源定义
     /**
-     * 全局资源定义, 以'_global'开头, 通过对象扩展的方式扩展到组件翻译资源中，例如:
-     *    $.extend(true, I18N.zh["page"], I18N.zh["_global-navigation"]);
+     * 全局资源定义, 以'__'开头, 通过对象扩展的方式扩展到组件翻译资源中，例如:
+     *    $.extend(true, I18N.zh['__page'], I18N.zh["__global-navigation"]);
      * // TODO: 逐步移入 public 中
      */
-    "global-navigation": { // 全局导航
+    "__global-navigation": { // 全局导航
         "static": {
             "Overview": "总览",
             "Summary": "概要",
@@ -138,7 +138,7 @@ I18N.zh = {
         },
     },
 
-    "global-work-item-type": { // 全局工单类型
+    "__global-work-item-type": { // 全局工单类型
         "static": {
             "Epic": "史诗故事",
             "Feature": "特性",
@@ -151,7 +151,7 @@ I18N.zh = {
         }
     },
 
-    "global-work-item-state": { // 全局工单类型
+    "__global-work-item-state": { // 全局工单类型
         "static": {
             "Active": "已确认(Active)",
             "In Progress": "处理中(In Progress)",
@@ -159,7 +159,7 @@ I18N.zh = {
         }
     },
 
-    "global-btn-text": {
+    "__global-btn-text": {
         "static": {
             "New work item": "新建工单",
             "New Work Item": "新建工单",
@@ -170,14 +170,14 @@ I18N.zh = {
         },
     },
 
-    "global-work-item-assigned": {
+    "__global-work-item-assigned": {
         "static": {
             "@Me": "@我",
             "Unassigned": "未指派"
         },
     },
 
-    "global-work-item-field": {
+    "__global-work-item-field": {
         "static": {
             "Created Date": "创建日期",
             "Title": "标题",
@@ -192,7 +192,7 @@ I18N.zh = {
     //#endregion
 
     /* 页面非动态加载内容的翻译 */
-    "page": {
+    '__page': {
         "static": {}
     },
 
@@ -615,16 +615,16 @@ I18N.zh = {
 };
 
 // 复用全局导航翻译部分
-$.extend(true, I18N.zh["page"], I18N.zh["global-navigation"]);
-$.extend(true, I18N.zh["commandbar-item"], I18N.zh["global-navigation"]);
-$.extend(true, I18N.zh["vss-HubBreadcrumb"], I18N.zh["global-navigation"]);
-$.extend(true, I18N.zh["vss-PickList--row" /*"vss-PickList--element"*/], I18N.zh["global-work-item-type"], I18N.zh["global-work-item-state"], I18N.zh["global-work-item-assigned"]);
-$.extend(true, I18N.zh["ms-Button-textContainer"], I18N.zh["global-btn-text"]);
-$.extend(true, I18N.zh["ms-ContextualMenu-item"], I18N.zh["global-navigation"], I18N.zh["global-work-item-type"], I18N.zh["global-btn-text"]);
-$.extend(true, I18N.zh["ms-CommandBarItem-link"], I18N.zh["global-navigation"], I18N.zh["global-work-item-type"], I18N.zh["global-btn-text"]);
-$.extend(true, I18N.zh["ms-Tooltip"], I18N.zh["global-work-item-type"]);
-$.extend(true, I18N.zh["ms-DetailsHeader-cell"], I18N.zh["global-work-item-field"]);
-$.extend(true, I18N.zh["grid-header-column"], I18N.zh["global-work-item-field"]);
+$.extend(true, I18N.zh['__page'], I18N.zh["__global-navigation"]);
+$.extend(true, I18N.zh["commandbar-item"], I18N.zh["__global-navigation"]);
+$.extend(true, I18N.zh["vss-HubBreadcrumb"], I18N.zh["__global-navigation"]);
+$.extend(true, I18N.zh["vss-PickList--row" /*"vss-PickList--element"*/], I18N.zh["__global-work-item-type"], I18N.zh["__global-work-item-state"], I18N.zh["__global-work-item-assigned"]);
+$.extend(true, I18N.zh["ms-Button-textContainer"], I18N.zh["__global-btn-text"]);
+$.extend(true, I18N.zh["ms-ContextualMenu-item"], I18N.zh["__global-navigation"], I18N.zh["__global-work-item-type"], I18N.zh["__global-btn-text"]);
+$.extend(true, I18N.zh["ms-CommandBarItem-link"], I18N.zh["__global-navigation"], I18N.zh["__global-work-item-type"], I18N.zh["__global-btn-text"]);
+$.extend(true, I18N.zh["ms-Tooltip"], I18N.zh["__global-work-item-type"]);
+$.extend(true, I18N.zh["ms-DetailsHeader-cell"], I18N.zh["__global-work-item-field"]);
+$.extend(true, I18N.zh["grid-header-column"], I18N.zh["__global-work-item-field"]);
 
-$.extend(true, I18N.zh["work-items-hub-view"], I18N.zh["global-btn-text"]);
-$.extend(true, I18N.zh["work-items-hub-row"], I18N.zh["global-work-item-type"], I18N.zh["global-work-item-state"], I18N.zh["global-work-item-assigned"]);
+$.extend(true, I18N.zh["work-items-hub-view"], I18N.zh["__global-btn-text"]);
+$.extend(true, I18N.zh["work-items-hub-row"], I18N.zh["__global-work-item-type"], I18N.zh["__global-work-item-state"], I18N.zh["__global-work-item-assigned"]);
