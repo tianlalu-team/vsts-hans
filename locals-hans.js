@@ -40,7 +40,7 @@ I18N.conf = {
     // 'vc-create-tag-dialog', // 创建代码 Tag  NOTE: 此节点不直接添加，此组件的翻译只能递归节点时来检查节点是否为组件
 
     // // 区域刷新
-    // "zerodata", // 列表没有数据时
+    // 'zerodata', // 列表没有数据时
     // 'grid-header-column', // 动态加载的表头列
     // 'edit-readme-cta', // Overview -> Summary
     // 'wiki-edit', // Overview -> Wiki
@@ -53,9 +53,9 @@ I18N.conf = {
     // 'ms-Button-textContainer', // 补充按钮文本
     // 'ms-CommandBarItem-link', // 链接按钮
     // 'ms-Dropdown-item', // 还是操作按钮
-    // "ms-DetailsHeader-cell", // 表格的表头
-    // "members-title-div", // 项目首页成员标题
-    // "activity-panel", // 项目首页活动面板
+    // 'ms-DetailsHeader-cell', // 表格的表头
+    // 'members-title-div', // 项目首页成员标题
+    // 'activity-panel', // 项目首页活动面板
     // ],
 
     /**
@@ -69,10 +69,10 @@ I18N.conf = {
 I18N.zh = {
 
     //#region 标题翻译
-    "__title": {  // 页面标题翻译
-        "static": {
+    '__title': {  // 页面标题翻译
+        'static': {
         },
-        "regexp": [
+        'regexp': [
         ],
     },
     //#endregion
@@ -85,247 +85,256 @@ I18N.zh = {
      *    3. 通用的工作流程状态翻译
      *    4. 其他多处出现需要公用的简单单词
      */
-    "__common": {
-        "static": {
+    '__common': {
+        'static': {
             // 通用的按钮动作翻译
-            "@Me": "@我",
+            '@Me': '@我',
             
-            "1 Day": "1 天",
-            "7 Days": "7 天",
-            "30 Days": "30 天",
-            "1 Day": "1 天",
-            "7 Days": "7 天",
-            "30 Days": "30 天",
+            '1 Day': '1 天',
+            '7 Days': '7 天',
+            '30 Days': '30 天',
+            '1 Day': '1 天',
+            '7 Days': '7 天',
+            '30 Days': '30 天',
             '7-day pass rate': '最近7天成功率',
-            // "7 Days": "",
+            // '7 Days': '',
             
-            "Admin settings": "设置",
-            "Area Path": "功能分区",
-            "Assigned To": "指派给",
-            "Activity Date": "最后更新时间",
-            "Active": "已确认(Active)",
-            "Area": "功能区域",
-            "Assigned to": "指派到人",
-            "Add to favorites": "收藏",
-            "Assigned to me": "指派给我",
-            "Activity": "活动",
-            "Area filter": "功能区域过滤",
-            "Area": "功能区域",
-            "Assigned to filter": "指派过滤",
-            "Assigned to": "指派到人",
-            "Activity": "动态",
+            'Admin settings': '设置',
+            'Area Path': '功能分区',
+            'Assigned To': '指派给',
+            'Activity Date': '最后更新时间',
+            'Active': '已确认(Active)',
+            'Area': '功能区域',
+            'Assigned to': '指派到人',
+            'Add to favorites': '收藏',
+            'Assigned to me': '指派给我',
+            'Activity': '活动',
+            'Area filter': '功能区域过滤',
+            'Area': '功能区域',
+            'Assigned to filter': '指派过滤',
+            'Assigned to': '指派到人',
+            'Activity': '动态',
             
-            "Boards": "看板",
-            "Backlogs": "积压",
-            "Branches": "分支",
-            "Build and release": "构建和发布",
-            "Builds": "构建",
+            'Boards': '看板',
+            'Backlogs': '积压',
+            'Branches': '分支',
+            'Build and release': '构建和发布',
+            'Build & Release': '构建和发布'
+            'Builds succeeded': '成功的构建',
+            'Builds': '构建',
             'Back to "Assigned to me" tab (Alt + Q)': '返回"指派给我"页面(Alt + Q)',
-            "Back to Work Items": "返回到工单",
+            'Back to Work Items': '返回到工单',
             'Build Definitions': 'Build 定义',
             'Build ID or build number': 'Build Id 或内部版本号',
             
-            "Click": "点击",
-            "Column Options": "列设置",
-            "Clear": "清除",
-            "Code": "代码",
-            "Commits": "查看提交",
-            "Changed Date": "最后修改时间",
-            "Create project": "新建项目",
-            //"Chart is unavailable to screenreaders. Sibling table element contains screen reader available representation of chart": "",
-            //"Chart screen reader information.": "",
-            "Create new project": "创建一个新项目",
-            "Create project": "新建项目",
-            "Change": "切换页面",
-            "Code": "代码动态",
-            "Chart": "图表",
-            "Commits": "提交",
-            "Created Date": "创建日期",
+            'Click': '点击',
+            'Column Options': '列设置',
+            'Clear': '清除',
+            'created': '新建的',
+            'closed': '关闭的',
+            'completed': '已完成的',
+            'Code': '代码',
+            'Commits': '查看提交',
+            'Changed Date': '最后修改时间',
+            'Create project': '新建项目',
+            //'Chart is unavailable to screenreaders. Sibling table element contains screen reader available representation of chart': '',
+            //'Chart screen reader information.': '',
+            'Create new project': '创建一个新项目',
+            'Create project': '新建项目',
+            'Change': '切换页面',
+            'Code': '代码动态',
+            'Chart': '图表',
+            'Commits': '提交',
+            'Created Date': '创建日期',
             
-            "Delete": "删除",
-            "Dashboards": "仪表板",
-            "Deployment groups": "部署分组",
-            "Don't miss important work": "不要错过重要的工作",
-            "Download as Zip": "下载为 Zip",
+            'Delete': '删除',
+            'Dashboards': '仪表板',
+            'Deployments succeeded': '成功的部署',
+            'Deployment groups': '部署分组',
+            "Don't miss important work": '不要错过重要的工作',
+            'Download as Zip': '下载为 Zip',
             'Default branch summary': '默认分支摘要',
             'Definitions': '定义',
             
             'e.g., Tags:"Release Blocker"': '例如: Tags:"Release Blocker"',
             '(e.g., ToDo OR revisit)': '(例如: ToDo OR revisit)',
-            "Epic": "史诗故事",
-            "Enter title": "输入标题",
-            "Edit in Wiki": "在 Wiki 中编辑此页", // 翻译失败, 会再次动态生成节点 .edit-readme-cta
-            "Edit in Wiki": "在 Wiki 中编辑此页",
-            "Epics": "史诗故事",
-            "Epics Backlog": "史诗故事积压清单",
-            //"Epics backlog": "史诗故事积压清单",
-            "Epics Board": "史诗故事看板",
-            "Enter full screen mode": "进入全屏模式",
-            "Epics Backlog": "史诗故事积压清单",
-            "Epics backlog": "史诗故事积压清单",
-            "Epics Board": "史诗故事看板",
-            "Epics": "史诗故事",
-            "Edit page": "编辑页面",
+            'Epic': '史诗故事',
+            'Enter title': '输入标题',
+            'Edit in Wiki': '在 Wiki 中编辑此页', // 翻译失败, 会再次动态生成节点 .edit-readme-cta
+            'Edit in Wiki': '在 Wiki 中编辑此页',
+            'Epics': '史诗故事',
+            'Epics Backlog': '史诗故事积压清单',
+            //'Epics backlog': '史诗故事积压清单',
+            'Epics Board': '史诗故事看板',
+            'Enter full screen mode': '进入全屏模式',
+            'Epics Backlog': '史诗故事积压清单',
+            'Epics backlog': '史诗故事积压清单',
+            'Epics Board': '史诗故事看板',
+            'Epics': '史诗故事',
+            'Edit page': '编辑页面',
             
-            "File": "文件",
-            "Folder": "文件夹",
-            "Files": "代码浏览",
-            "Filter projects": "项目过滤",
-            "Filter projects": "项目过滤",
-            "Filter by keyword": "关键词过滤",
+            'File': '文件',
+            'Folder': '文件夹',
+            'Files': '代码浏览',
+            'Filter projects': '项目过滤',
+            'Filter projects': '项目过滤',
+            'Filter by keyword': '关键词过滤',
             'Filter by field': '根据字段过滤',
-            "Features": "特性",
-            "Features backlog": "特性积压清单",
-            "Features Board": "特性看板",
-            "Features backlog": "特性积压清单",
-            "Features Board": "特性看板",
-            "Features": "特性",
-            "Following": "我跟进的",
+            'Features': '特性',
+            'Features backlog': '特性积压清单',
+            'Features Board': '特性看板',
+            'Features backlog': '特性积压清单',
+            'Features Board': '特性看板',
+            'Features': '特性',
+            'Following': '我跟进的',
             'Folder / Name': '文件夹/名称',
-            "Feature": "特性",
+            'Feature': '特性',
             
-            "Get help": "获取帮助",
+            'Get help': '获取帮助',
             
             'Help': '帮助',
-            "Hide filters": "隐藏过滤器",
+            'Hide filters': '隐藏过滤器',
             'History': '历史',
             
             'Import': '导入',
-            "Issue": "问题",
-            //"Interactive chart. Chart. Use up and down arrows to navigate with most screen readers.": "",
-            "In Progress": "处理中(In Progress)",
+            'Issue': '问题',
+            //'Interactive chart. Chart. Use up and down arrows to navigate with most screen readers.': '',
+            'In Progress': '处理中(In Progress)',
             
-            "Keep an eye on important work": "请时刻关注重要的工作",
+            'Keep an eye on important work': '请时刻关注重要的工作',
             
-            "Library": "库",
-            "Learn more about @mentions": "了解有关 @提到 的更多信息",
-            //"Load test" : "测试",
-            "Learn more about following": "详细了解以下内容",
+            'Library': '库',
+            'Learn more about @mentions': '了解有关 @提到 的更多信息',
+            //'Load test' : '测试',
+            'Learn more about following': '详细了解以下内容',
             'Last built': '最近一次运行',
-            "Live updates": "实时更新",
+            'Live updates': '实时更新',
             
-            "Members and Activity": "成员 & 动态",
-            "Members": "项目成员",
-            "Manage Team Members": "管理团队成员",
-            "More Actions...": "更多...",
-            "Mentioned": "@提到过我",
-            "My activity": "看不懂的(My activity)",
-            "Members": "成员",
+            'Members and Activity': '成员 & 动态',
+            'Members': '项目成员',
+            'Manage Team Members': '管理团队成员',
+            'More Actions...': '更多...',
+            'Mentioned': '@提到过我',
+            'My activity': '看不懂的(My activity)',
+            'Members': '成员',
             'Manage folders': '管理文件夹',
-            //"Machines" : "测试",
+            //'Machines' : '测试',
             'Mine': '我的',
-            "My accounts": "我的账户",
+            'My accounts': '我的账户',
             
-            "New": "新建",
-            "New page": "新建页面",
             'New': '新建',
-            "New work item": "新建工单",
-            "New Work Item": "新建工单",
-            "New": "待确认(New)",
-            "New Work Item": "新建工单",
-            //"Number of Commits per day": "",
-            "New query": "新建查询器",
+            'New page': '新建页面',
+            'New': '新建',
+            'New work item': '新建工单',
+            'New Work Item': '新建工单',
+            'New': '待确认(New)',
+            'New Work Item': '新建工单',
+            //'Number of Commits per day': '',
+            'New query': '新建查询器',
             'Next work item in the "Assigned to me" tab (Alt + N)': '"指派给我"页面的下一个工单 (Alt + N)',
-            "No tags available": "当前没有任何标签",
-            "No types available": "当前没有任何工单类型",
-            "No states available": "当前没有任何工单状态",
-            "No areas available": "当前没有任何功能区域",
+            'No tags available': '当前没有任何标签',
+            'No types available': '当前没有任何工单类型',
+            'No states available': '当前没有任何工单状态',
+            'No areas available': '当前没有任何功能区域',
             
-            "Off": "关闭",
-            "On": "开启",
-            "Open in Queries": "查询器中打开",
-            "Overview": "总览",
+            'Off': '关闭',
+            'On': '开启',
+            'Open in Queries': '查询器中打开',
+            'Overview': '总览',
             'Operators': '操作符',
             
-            "Projects": "项目",
-            "Pushes": "推送记录",
-            "Pull Requests": "拉取请求",
-            "Packages": "包",
-            "Project documentation": "项目说明文档",
-            "Projects": "项目列表",
-            "Projects contain your source code, work items, automated builds and more.": "一个包含您的源代码，工作项，自动构建等相关信息的项目。",
-            "Project name": "项目名称",
-            "Projects": "项目列表",
-            "Project Information": "项目信息",
-            "Project settings": "项目设置",
-            "Pin item": "固定到快捷栏",
+            'Projects': '项目',
+            'Pushes': '推送记录',
+            'Pull Requests': '拉取请求',
+            'Pull requests': '拉取请求',
+
+            'Packages': '包',
+            'Project documentation': '项目说明文档',
+            'Projects': '项目列表',
+            'Projects contain your source code, work items, automated builds and more.': '一个包含您的源代码，工作项，自动构建等相关信息的项目。',
+            'Project name': '项目名称',
+            'Projects': '项目列表',
+            'Project Information': '项目信息',
+            'Project settings': '项目设置',
+            'Pin item': '固定到快捷栏',
             'Previous work item in the "Assigned to me" tab (Alt + P)': '"指派给我"页面的上一个工单 (Alt + P)',
             
             'Queued': '排队',
             'Queued': '队列中',
-            "Quickly take action on items where you have been @mentioned.": "您可以快速对@您的工单开展工作。",
-            "Queries": "筛选器",
+            'Quickly take action on items where you have been @mentioned.': '您可以快速对@您的工单开展工作。',
+            'Queries': '筛选器',
             
-            "Recycle Bin": "回收站",
-            "Rename": "重命名",
-            "Related pages": "相关页面",
-            "Releases": "发布",
+            'Recycle Bin': '回收站',
+            'Rename': '重命名',
+            'Related pages': '相关页面',
+            'Releases': '发布',
             'Running': '运行中',
-            "Remove from favorites": "取消收藏", // 翻译失败
-            "Readme": "自述",
-            "Remove from favorites": "取消收藏",
-            "Recently updated": "最近更新",
+            'Remove from favorites': '取消收藏', // 翻译失败
+            'Readme': '自述',
+            'Remove from favorites': '取消收藏',
+            'Recently updated': '最近更新',
             'Requested by me': '由我请求',
-            "Recently completed": "最近完成",
-            //"Runs" : "测试",
-            "Recently created": "最近创建",
+            'Recently completed': '最近完成',
+            //'Runs' : '测试',
+            'Recently created': '最近创建',
             
-            "Search": "搜索",
+            'Search': '搜索',
             'Security': '安全',
-            "Summary": "概要",
-            "Sprints": "冲刺",
-            "State": "状态",
-            "States filter": "状态过滤",
-            "States": "工单状态",
+            'Summary': '概要',
+            'Sprints': '冲刺',
+            'State': '状态',
+            'States filter': '状态过滤',
+            'States': '工单状态',
             'Search': '键入关键词开始搜索',
-            "Stories": "用户故事",
-            "Stories backlog": "用户故事积压清单",
-            "Stories Board": "用户故事看板",
-            "States": "工单状态",
-            "Show less information": "折叠",
-            "Stories backlog": "用户故事积压清单",
-            "Stories Board": "用户故事看板",
-            "Stories": "用户故事",
+            'Stories': '用户故事',
+            'Stories backlog': '用户故事积压清单',
+            'Stories Board': '用户故事看板',
+            'States': '工单状态',
+            'Show less information': '折叠',
+            'Stories backlog': '用户故事积压清单',
+            'Stories Board': '用户故事看板',
+            'Stories': '用户故事',
             'Status': '状态',
             
-            "Tags": "标签",
-            "Task groups": "任务分组",
-            "Test": "测试",
-            "Task": "任务",
-            "Test Case": "测试用例",
-            "Test Plan": "测试计划",
-            "Test Suite": "测试套件(Test Suite)",
-            "Title": "标题",
-            "Tags": "标签",
-            "Types filter": "类型过滤",
-            "Types": "工单类型",
-            "Tags filter": "标签过滤",
-            "Tags": "标签",
+            'Tags': '标签',
+            'Task groups': '任务分组',
+            'Test': '测试',
+            'Task': '任务',
+            'Test Case': '测试用例',
+            'Test Plan': '测试计划',
+            'Test Suite': '测试套件(Test Suite)',
+            'Title': '标题',
+            'Tags': '标签',
+            'Types filter': '类型过滤',
+            'Types': '工单类型',
+            'Tags filter': '标签过滤',
+            'Tags': '标签',
             'This account': '本账户内搜索',
             'This project': '本项目内搜索',
-            "to get updates about the items you want to track.": "获取跟进的工单的进度更新。",
-            "Types": "工单类型",
-            "Tags": "标签",
+            'to get updates about the items you want to track.': '获取跟进的工单的进度更新。',
+            'Types': '工单类型',
+            'Tags': '标签',
             'Triggered by': '触发',
-            //"Test Plans*" : "测试计划*",
-            //"Time range for showing activity data": "",
+            //'Test Plans*' : '测试计划*',
+            //'Time range for showing activity data': '',
             
-            "User Story": "用户故事",
-            "Unassigned": "未指派",
-            "Upload file(s)": "上传文件",
-            "Unpin item": "从快捷栏取消固定",
+            'User Story': '用户故事',
+            'Unassigned': '未指派',
+            'Upload file(s)': '上传文件',
+            'Unpin item': '从快捷栏取消固定',
             
-            "Version control": "版本控制系统",
-            "View options": "设置",
+            'Version control': '版本控制系统',
+            'View options': '设置',
             
-            "Work": "工作",
-            "Work Items": "工单",
-            "What's new in VSTS": "VSTS 新特性(英文)",
-            "Work item process": "工作组织流程",
-            "Work Items": "工单",
+            'Work': '工作',
+            'Work Items': '工单',
+            'Work items': '工单',
+            "What's new in VSTS": 'VSTS 新特性(英文)',
+            'Work item process': '工作组织流程',
+            'Work Items': '工单',
         },
-        "regexp": [
-            [/by 1 authors/, "由1个作者提交"],
+        'regexp': [
+            [/by 1 authors/, '由1个作者提交'],
         ],
     },
     //#endregion
@@ -334,12 +343,12 @@ I18N.zh = {
     // /**
     //  * https://{account}.visualstudio.com/ 团队首页
     //  */
-    // "organization-navigation": { // 左侧菜单(团队清单)
-    //     "static": {
+    // 'organization-navigation': { // 左侧菜单(团队清单)
+    //     'static': {
     //     }
     // },
-    // "suite-me-page-view": { // 主页面(团队项目列表)
-    //     "static": {
+    // 'suite-me-page-view': { // 主页面(团队项目列表)
+    //     'static': {
     //     }
     // },
     // //#endregion
@@ -347,22 +356,22 @@ I18N.zh = {
     // /**
     //  * 跨页面组件
     //  */
-    // "vss-HubBreadcrumb": { // 顶部面包屑导航
-    //     "static": {},
+    // 'vss-HubBreadcrumb': { // 顶部面包屑导航
+    //     'static': {},
     // },
 
     // /**
     //  * 页面级组件翻译, 指的是一个页面的最主要的组件
-    //  * 通常都位于 $("div[data-renderedregion='content'] .internal-content-host") 下面，也有少量组件不在这个位置
+    //  * 通常都位于 $('div[data-renderedregion='content'] .internal-content-host') 下面，也有少量组件不在这个位置
     //  * 不管在不在这个位置，其实不影响翻译，只是作为定位这个组件的参考
     //  */
 
     // //#region Overview -> Summary
     // // https://{account}.visualstudio.com/{project}
-    // "project-overview-page-container": {
-    //     "static": {
+    // 'project-overview-page-container': {
+    //     'static': {
     //     },
-    //     "regexp": [
+    //     'regexp': [
     //     ]
     // },
     // //#endregion
@@ -371,7 +380,7 @@ I18N.zh = {
     // // https://{account}.visualstudio.com/{project}/_dashboards
     // 'dashboard-landing': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
@@ -379,7 +388,7 @@ I18N.zh = {
     // // https://{account}.visualstudio.com/{project}/_wiki
     // 'wiki-container': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
@@ -391,47 +400,47 @@ I18N.zh = {
     // // https://{account}.visualstudio.com/{project}/_workitems/recentlyupdated
     // // https://{account}.visualstudio.com/{project}/_workitems/recentlycompleted
     // // https://{account}.visualstudio.com/{project}/_workitems/recentlycreated
-    // "work-items-hub-view": {
-    //     "static": {
+    // 'work-items-hub-view': {
+    //     'static': {
 
     //     },
-    //     "regexp": [],
+    //     'regexp': [],
     // },
     // // 工单列表中的每一行
     // 'work-items-hub-row': {
-    //     "static": {},
-    //     "regexp": [],
+    //     'static': {},
+    //     'regexp': [],
     // },
     // //#endregion
 
     // //#region Work -> Boards & Work -> Backlogs
     // // https://{account}.visualstudio.com/{project}/_boards/board/{team}
     // // TODO: 该页面切换工单类型(史诗、特性、故事)时，重新加载子组件区域，父组件并不重新加载
-    // "board-content-view": {
+    // 'board-content-view': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // // https://{account}.visualstudio.com/{project}/{team}/_boards/all
     // // https://{account}.visualstudio.com/{project}/{team}_boards/mine
     // // https://{account}.visualstudio.com/{project}/{team}/_backlogs/all
     // // https://{account}.visualstudio.com/{project}/{team}/_backlogs/mine
-    // "directory-content": {
+    // 'directory-content': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
     // //#region Work -> Sprints
     // // https://{account}.visualstudio.com/{project}/_sprints/all
     // // https://{account}.visualstudio.com/{project}/_sprints/mine
-    // "sprints-directory-content": {
+    // 'sprints-directory-content': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // // https://{account}.visualstudio.com/{project}/_sprints/taskboard/{team}/Zeus/{iteration}
-    // "sprint-view-container": {
+    // 'sprint-view-container': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
@@ -439,14 +448,14 @@ I18N.zh = {
     // // https://{account}.visualstudio.com/{project}/_queries/all
     // // https://{account}.visualstudio.com/{project}/_queries/favorites
     // // NOTE: 监听不到这个节点被新增，此组件的翻译只能递归节点时来检查节点是否为组件
-    // "queries-view": {
+    // 'queries-view': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // // https://{account}.visualstudio.com/{project}/_queries/query/{queryid}
-    // "triage-view-hub-container": {
+    // 'triage-view-hub-container': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
@@ -454,7 +463,7 @@ I18N.zh = {
     // // https://{account}.visualstudio.com/{project}/_git/{repo}
     // 'versioncontrol-explorer-view': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
@@ -462,7 +471,7 @@ I18N.zh = {
     // // https://{account}.visualstudio.com/{project}/_git/{repo}/commits
     // 'versioncontrol-git-history-view': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
@@ -470,7 +479,7 @@ I18N.zh = {
     // // https://{account}.visualstudio.com/{project}/_git/{repo}/pushes
     // 'versioncontrol-pushes-view': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
@@ -478,7 +487,7 @@ I18N.zh = {
     // // https://{account}.visualstudio.com/{project}/_git/{repo}/branches
     // 'vc-newbranches-view': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
@@ -486,7 +495,7 @@ I18N.zh = {
     // // https://{account}.visualstudio.com/{project}/_git/{repo}/tags
     // 'git-tags-page': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
@@ -494,14 +503,14 @@ I18N.zh = {
     // // https://{account}.visualstudio.com/{project}/_git/{repo}/pullrequests
     // 'versioncontrol-pullrequest-list-view': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
 
     // // Code -> Pull Requests -> New pull requests
     // // https://{account}.visualstudio.com/{project}/_git/{repo}/pullrequestcreate
     // 'versioncontrol-pullrequest-create-view': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
@@ -509,13 +518,13 @@ I18N.zh = {
     // // https://{account}.visualstudio.com/{project}/_build
     // 'build-definitions-view': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // // Build & Release -> Build -> New
     // // https://{account}.visualstudio.com/{project}/_apps/hub/ms.vss-ciworkflow.build-ci-hub
     // 'ci-getting-started-container': {
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
     // //#endregion
 
@@ -524,7 +533,7 @@ I18N.zh = {
     // 'expandable-search-header':{
     //     'static': {
     //     },
-    //     "regexp": []
+    //     'regexp': []
     // },
     // // 全局顶部搜索框操作提示
     // 'search-filter-caption': {
@@ -533,72 +542,72 @@ I18N.zh = {
     // },
 
     // /* 局部刷新内容 */
-    // "agile-hub-error": { //错误信息显示
+    // 'agile-hub-error': { //错误信息显示
     //     'static': {},
-    //     "regexp": []
+    //     'regexp': []
     // },
 
-    // "zerodata": {
-    //     "static": {
+    // 'zerodata': {
+    //     'static': {
     //     }
     // },
-    // "edit-readme-cta": {
-    //     "static": {
+    // 'edit-readme-cta': {
+    //     'static': {
     //     }
     // },
     // 'wiki-edit': {
-    //     "static": {
+    //     'static': {
     //     }
     // },
     // 'wiki-new-page': {
-    //     "static": {
+    //     'static': {
     //     }
     // },
     // 'commandbar-item': {
-    //     "static": {
+    //     'static': {
     //     }
     // },
     // 'grid-header-column': { // 动态加载的表头列
-    //     "static": {}
+    //     'static': {}
     // },
     // 'vss-PickList--row': { //'vss-PickList--element': {
-    //     "static": {}
+    //     'static': {}
     // },
     // 'vss-PickList--noItemsText': {
-    //     "static": {
+    //     'static': {
     //     }
     // },
     // 'ms-ContextualMenu-item': {
-    //     "static": {
+    //     'static': {
     //     }
     // },
     // 'ms-Tooltip': {
-    //     "static": {
+    //     'static': {
     //     }
     // },
     // 'ms-Button-textContainer': {
-    //     "static": {
+    //     'static': {
 
     //     }
     // },
     // 'ms-CommandBarItem-link': {
-    //     "static": {
+    //     'static': {
     //     }
     // },
-    // "ms-Dropdown-item": {
-    //     "static": {
+    // 'ms-Dropdown-item': {
+    //     'static': {
     //     },
     // },
-    // "ms-DetailsHeader-cell": {
-    //     "static": {
+    // 'ms-DetailsHeader-cell': {
+    //     'static': {
     //     },
     // },
-    // "members-title-div": {
-    //     "static": {
+    // 'members-title-div': {
+    //     'static': {
     //     }
     // },
-    // "activity-panel": {
-    //     "static": {
+    // 'activity-panel': {
+    //     'static': {
     //     }
     // },
     // 'build-title-bar': {
