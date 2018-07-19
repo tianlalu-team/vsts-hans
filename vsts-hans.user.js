@@ -68,9 +68,13 @@
     // });
 
     // 在文本节点的值发生变化的时候触发
+    // 用于修补部分文本直接变更时，并不触发 DOMNodeInserted 事件情况的再次翻译
     document.addEventListener('DOMCharacterDataModified', function (e) {
-        // console.log(e);
-        //e.newValue = translate(e.newValue);
+        var str = translate(e.newValue, '__common'); // 翻译已知组件
+        if (str !== false || str === e.newValue) { // 组件翻译完成
+            // console.log('文本变更', e);
+            e.target['data'] = str;
+        }
     });
 
     function walk(node) {
@@ -242,6 +246,9 @@
         if (str !== false || str === _key_neat) { // 组件翻译完成
             return text.replace(_key, str); // 替换原字符，保留空白部分
         }
+
+        if (component === '__common')
+            return false;
 
         // 组件资源翻译失败后，尝试使用公共资源进行翻译
         str = transComponent('__common', _key_neat); // 公共资源翻译
