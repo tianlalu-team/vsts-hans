@@ -59,8 +59,18 @@
 
     // 在一个节点作为子节点被插入到另一个节点中时触发;
     document.addEventListener('DOMNodeInserted', function (e) {
-
         walk(e.target);
+    });
+
+    // 在DOM结构中发生任何变化时触发
+    // document.addEventListener('DOMSubtreeModified', function (e) {
+    //     console.log(e);
+    // });
+
+    // 在文本节点的值发生变化的时候触发
+    document.addEventListener('DOMCharacterDataModified', function (e) {
+        // console.log(e);
+        //e.newValue = translate(e.newValue);
     });
 
     function walk(node) {
