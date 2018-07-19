@@ -75,7 +75,7 @@ I18N.zh = {
             "7 Days": "7 天",
             "30 Days": "30 天",
             "7-day pass rate": "最近7天成功率",
-            
+
             "Acceptance Criteria": "验收标准",
             "Accepted By": "由他确认",
             "Accepted Date": "确认日期",
@@ -86,12 +86,14 @@ I18N.zh = {
             "Activity": "动态", // TODO: 在工作项中有字段名称也是'Activity'，但显然不是这个意思
             "Activity Date": "最后更新时间",
             "Add a column": "增加一列",
+            "Add attachment": "增加附件",
             "Add tag": "添加标签",
             "Add link": "添加关联",
             "Add or remove columns. To change the column order, drag and drop a field, or use the keyboard shortcuts, Ctrl+Up or Ctrl+Down.": "添加或删除列。如需更改列的显示顺序，请拖放字段或使用键盘快捷键，Ctrl + ↑ 或Ctrl + ↓ 。",
             "Add to favorites": "收藏",
             "Admin settings": "设置",
             "An estimate of the number of units of work remaining to complete this bug": "估计解决此BUG还需要多少时间",
+            "Are you sure you want to leave the page?": "你确定要离开页面吗？",
             "Area": "功能区域",
             "Area filter": "功能区域过滤",
             "Area Path": "功能分区",
@@ -100,7 +102,8 @@ I18N.zh = {
             "Assigned to": "指派给",
             "Assigned to me": "指派给我",
             "Assigned to filter": "指派过滤",
-            
+            "Attachments": "附件",
+
             "Back to Work Items": "返回到工单",
             "Back to \"Assigned to me\" tab (Alt + Q)": "返回\"指派给我\"页面(Alt + Q)",
             "Backlogs": "积压",
@@ -114,7 +117,7 @@ I18N.zh = {
             "Builds": "构建",
             "Builds succeeded": "成功的构建",
             "Business importance. 1=must fix; 4=unimportant.": "业务重要性。1=必须修复; 4=不重要。",
-            
+
             "Cancel": "取消",
             "Change": "切换页面",
             "Changed Date": "最后修改时间",
@@ -123,6 +126,7 @@ I18N.zh = {
             "Chart": "图表",
             "Clear": "清除",
             "Click": "点击",
+            "Close": "关闭",
             "closed": "关闭的",
             "Code": "代码",
             // "Code": "代码动态",s
@@ -140,7 +144,7 @@ I18N.zh = {
             "Create project": "新建项目",
             "created": "新建的",
             "Created Date": "创建日期",
-            
+
             "Dashboards": "仪表板",
             "Default branch summary": "默认分支摘要",
             "Delete": "删除",
@@ -155,7 +159,7 @@ I18N.zh = {
             "Documentation": "文档撰写",
             "Don't miss important work": "不要错过重要的工作",
             "Download as Zip": "下载为 Zip",
-            
+
             "e.g., Tags:\"Release Blocker\"": "例如: Tags:\"Release Blocker\"",
             "(e.g., ToDo OR revisit)": "(例如: ToDo OR revisit)",
             "Edit in Wiki": "在 Wiki 中编辑此页", // 翻译失败, 会再次动态生成节点 .edit-readme-cta
@@ -172,7 +176,7 @@ I18N.zh = {
             "Epics": "史诗故事",
             "Existing item": "现有的项",
             "Exit full screen mode": "退出全屏模式",
-            
+
             "Feature": "特性",
             "Features": "特性",
             "Features backlog": "特性积压清单",
@@ -187,44 +191,52 @@ I18N.zh = {
             "Folder / Name": "文件夹/名称",
             "Follow": "跟进",
             "Following": "我跟进的",
-            
+            "Found in Build": "发现于构建",
+
             "Get help": "获取帮助",
-            
+
             "Help": "帮助",
             "Hide": "隐藏",
             "Hide filters": "隐藏过滤器",
             "History": "历史",
             "How to see the bug. End by contrasting expected with actual behavior.": "清晰的描述BUG如何重现的步骤。并且在最后，说明预期行为与实际行的对比。",
-            
+
             "Import": "导入",
             "In Progress": "处理中(In Progress)",
             "Initial value for Remaining Work - set once, when work begins": "当开始此项工作时，一次性设置一个预估需要的时间",
+            "Integrated in Build": "集成于构建",
             //"Interactive chart. Chart. Use up and down arrows to navigate with most screen readers.": "",
             "Issue": "问题",
-            
+
             "Keep an eye on important work": "请时刻关注重要的工作",
-            
+
             "Last built": "最近一次运行",
             "Learn more about @mentions": "了解有关 @提到 的更多信息",
             "Learn more about following": "详细了解以下内容",
+            "Leave": "离开",
             "Library": "库",
             "Link type": "链接类型",
+            "Links": "链接",
             "Live updates": "实时更新",
             //"Load test" : "测试",
             "Loading...": "加载中...",
-            
+
             //"Machines" : "测试",
             "Manage folders": "管理文件夹",
             "Manage Team Members": "管理团队成员",
             "Maximize Development": "最大化开发面板",
-            "Members and Activity": "成员 & 动态",            
+            "Maximize Discussion": "最大化话题讨论面板",
+            "Maximize Related Work": "最大化相关工作面板",
+            "Maximize Repro Steps": "最大化重现步骤面板",
+            "Maximize System Info": "最大化系统信息面板",
+            "Members and Activity": "成员 & 动态",
             "Members": "成员",
             "Mentioned": "@提到过我",
             "Mine": "我的",
             "More Actions...": "更多...",
             "My activity": "看不懂的(My activity)",
             "My accounts": "我的账户",
-            
+
             "New": "新建", // TODO: 新建按钮 
             "New": "待确认(New)",
             "New = for triage; Active = not yet fixed; Resolved = fixed not yet verified; Closed = fix verified.": "New = 等待; Active = 尚未修复; Resolved = 已修复但未验证; Closed = 修复得到验证",
@@ -234,12 +246,14 @@ I18N.zh = {
             "New work item": "新建工单",
             "New Work Item": "新建工单",
             "Next work item in the \"Assigned to me\" tab (Alt + N)": "\"指派给我\"页面的下一个工单 (Alt + N)",
+            "No attachments have been added": "没有任何附件",
+            "No areas available": "当前没有任何功能区域",
+            "No links have been added": "暂未添加任何链接",
             "No tags available": "当前没有任何标签",
             "No types available": "当前没有任何工单类型",
             "No states available": "当前没有任何工单状态",
-            "No areas available": "当前没有任何功能区域",
             //"Number of Commits per day": "",
-            
+
             "Off": "关闭",
             "On": "开启",
             "OK": "确定",
@@ -247,7 +261,7 @@ I18N.zh = {
             "Operators": "操作符",
             "Original Estimate": "初步估计",
             "Overview": "总览",
-            
+
             "Packages": "程序包",
             "Pin item": "固定到快捷栏",
             "Planning": "计划",
@@ -262,11 +276,11 @@ I18N.zh = {
             "Pull Requests": "拉取请求",
             "Pull requests": "拉取请求",
             "Pushes": "推送记录",
-            
+
             "Queries": "筛选器",
             "Queued": "队列中",
             "Quickly take action on items where you have been @mentioned.": "您可以快速对@您的工单开展工作。",
-            
+
             "Readme": "自述",
             "Reason": "原因",
             "Recycle Bin": "回收站",
@@ -277,6 +291,7 @@ I18N.zh = {
             "Related pages": "相关页面",
             "Related Work": "相关工作",
             "Releases": "发布",
+            "Remaining": "余量",
             "Remove from favorites": "取消收藏",
             "Remove this column": "移除此列",
             "Rename": "重命名",
@@ -287,9 +302,14 @@ I18N.zh = {
             "Resolved Reason": "解决方案",
             "Restore": "恢复",
             "Restore Development": "还原开发面板",
+            "Restore Discussion": "还原话题讨论面板",
+            "Restore Related Work": "还原相关工作面板",
+            "Restore Repro Steps": "还原重现步骤面板",
+            "Restore System Info": "还原系统信息面板",
+            "Revert changes": "还原更改",
             "Running": "运行中",
             //"Runs" : "测试",
-            
+
             "Save": "保存",
             "Search": "搜索",
             //"Search": "键入关键词开始搜索", //todo:
@@ -301,10 +321,12 @@ I18N.zh = {
             "Sorting": "排序",
             "Sprints": "冲刺",
             "State": "状态",
+            "State Graph": "状态变更图",
             "Status": "状态",
             //"States": "工单状态",
             //"States": "工单状态",
             "States filter": "状态过滤",
+            "Stay": "留下",
             "Stories": "用户故事",
             "Stories backlog": "用户故事积压清单",
             "Stories Board": "用户故事看板",
@@ -312,7 +334,7 @@ I18N.zh = {
             "Story Points": "故事点",
             "Summary": "概要",
             "System Info": "系统信息",
-            
+
             "Tags": "标签",
             "Tags": "标签",
             "Tags": "标签",
@@ -326,7 +348,7 @@ I18N.zh = {
             "Test Plan": "测试计划",
             "Test Suite": "测试套件(Test Suite)",
             "Testing": "测试",
-            "There are no links in this group. ": "暂无与此工作项关联的",
+            "There are no links in this group.": "此组中没有链接。",
             "The area of the product with which this bug is associated": "与此BUG相关联的产品功能区域",
             "The build in which the bug was found": "BUG产生于哪一次构建",
             "The build in which the bug was fixed": "BUG修复于哪一次构建",
@@ -344,22 +366,23 @@ I18N.zh = {
             "Type of work involved": "该工单的工作形式",
             "Types filter": "类型过滤",
             "Types": "工单类型",
-            
+
             "Unassigned": "未指派",
             "Unpin item": "从快捷栏取消固定",
             "Upload file(s)": "上传文件",
             "User Story": "用户故事",
-            
+
             "Version control": "版本控制系统",
             "View options": "设置",
-            
+
             "What's new in VSTS": "VSTS 新特性(英文)",
             "Work": "工作",
             "Work Items": "工单",
             "Work item process": "工作组织流程",
         },
         "regexp": [
-            [/by (\d+) authors/, "由 $1 个作者提交"]
+            [/by (\d+) authors/, "由 $1 个作者提交"],
+            [/(\d+) comments/, "$1 条讨论话题"],
         ]
     }
 };
