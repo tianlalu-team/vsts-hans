@@ -99,7 +99,7 @@ I18N.zh = {
             "Backlogs": "积压",
             "Branches": "分支",
             "Build and release": "构建和发布",
-            "Build & Release": "构建和发布"
+            "Build & Release": "构建和发布",
             "Builds succeeded": "成功的构建",
             "Builds": "构建",
             "Back to \"Assigned to me\" tab (Alt + Q)": "返回\"指派给我\"页面(Alt + Q)",
