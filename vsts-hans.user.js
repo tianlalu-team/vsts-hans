@@ -11,7 +11,6 @@
 // @updateURL    https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/vsts-hans.user.js
 // @downloadURL  https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/vsts-hans.user.js
 // @match        https://*.visualstudio.com/*
-// @require      https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js
 // @require      https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/locals-hans.js
 // @run-at       document-start
 // @grant        unsafeWindow
@@ -23,87 +22,102 @@
 (function (window, document, undefined) {
     'use strict';
 
-    // main.js
-    // ==========================================
-    var $ = unsafeWindow.jQuery || window.jQuery; // 取得页面的jQuery 对象
+    // 测试代码,测试组件内翻译失败时会调用公共翻译资源进行再一次翻译
+    // I18N.zh['__common']['static']['Search'] = '搜索(本翻译来自于 __common)';
+    // I18N.zh['__global-navigation'] = undefined;
+
+    // I18N.zh['search-filter-caption'] = {
+    //     'static': {
+    //         'Filter by field': '根据字段过滤',
+    //         'Operators': '操作符',
+    //         'e.g., Tags:"Release Blocker"': '例如: Tags:"Release Blocker"',
+    //         '(e.g., ToDo OR revisit)': '(例如: ToDo OR revisit)'
+    //     }
+    // };
+
+    /**
+     * 翻译思路:
+     *    遍历节点的全部子节点，根据节点的 class 属性来判断是否需要特殊化翻译，
+     *    如果节点需要特殊化处理，该节点下所有的子节点全部进行特殊化翻译，否则进行普通翻译
+     *    普通翻译匹配全局资源进行翻译
+     *    特殊化翻译首先根据匹配到的class进行特殊化翻译，翻译不成功用普通翻译进行补充
+     */
 
     var lang = 'zh'; // 中文
 
     // 构建正则表达式
-    // I18N.conf.reComponentClasses = eval('/(' + Object.keys(I18N[lang]).join("|") + ')/');
-    I18N.conf.reComponentClasses = eval('/\\b(' + Object.keys(I18N[lang]).join("|") + ')\\b/');
+    var components = Object.keys(I18N[lang]).filter(function (key) {
+        return key.substring(0, 2) !== '__';
+    });
+
+    I18N.conf.reComponent = eval('/\\b(' + components.join("|") + ')\\b/');
     I18N.conf.reIgnore = eval('/(' + I18N.conf.reIgnoreClasses.join("|") + ')/');
 
-    console.log(I18N.conf.reComponentClasses);
-
-    $(function ($) {
-        walk("page", document.body); // 立即翻译页面, 解决部分组件无法通过监听动态内容的方式获取的问题
+    window.addEventListener('load', function () {
+        walk(document.body);
     });
 
+    // 在一个节点作为子节点被插入到另一个节点中时触发;
     document.addEventListener('DOMNodeInserted', function (e) {
 
-        // TODO:文本节点待处理
-        if (e.target.nodeType === Node.TEXT_NODE) { // 文本节点翻译
-            console.log('直接添加文本节点，也是醉了:', e.target);
-            return;
-            //transElement(component, node, 'data');
-        }
-
-        console.log('动态添加了内容: ', e.target, e.target.innerHTML);
-        travel(e.target);
+        walk(e.target);
     });
 
-    /**
-     * 快速递归节点尝试去匹配组件，当匹配到组件时，对组件进行翻译，匹配失败时，快速对下一个节点进行匹配
-     */
-    function travel(node) {
-
-        if (node.nodeType === Node.ELEMENT_NODE) {
-            if (node.tagName === 'STYLE' || node.tagName === 'LINK' || node.tagName === 'SCRIPT') {
-                //console.log('节点被过滤了', node);
-                return;
-            }
-        }
-
-        // TODO: 全是数字的文本也要过滤
-
-        var component = false;
-
-        // 如果当前节点存在 class 且 class 可以匹配出需要翻译的组件
-        if (node.className && node.className.match) {
-            component = node.className.match(I18N.conf.reComponentClass);
-        }
-
-        if (component) {
-            // console.info('捕获到组件:' + component[1] || 'page', node);
-            walk(component[1] || 'page', node);
-        } else {
-            // 继续下探
-            var nodes = node.childNodes;
-            for (var i = 0, len = nodes.length; i < len; i++) {
-                travel(nodes[i])
-            }
-        }
-    }
-
-    /**
-     * 遍历节点
-     *
-     * @param {Element} node 节点
-     * @param {string} component 组件 Id
-     */
-    function walk(component, node) {
-        // 跳过 Wiki文档, Git 文件浏览, 代码显示等
-        if (I18N.conf.reIgnore.test(node.className)) {
-            //walk(component, node); // 遍历子节点
+    function walk(node) {
+        if (ignore(node))
             return;
-        }
 
         // TODO: 快捷键会截断英文单词，如何翻译?
         if (node.accesskey) {
             console.log('存在快捷键', node);
         }
 
+        var component = false;
+
+        // 如果当前节点存在 class 且 class 可以匹配出需要翻译的组件
+        if (node.className && node.className.match) {
+            component = node.className.match(I18N.conf.reComponent);
+        }
+
+        if (component) {
+            // debug:
+            // console.info('匹配组件成功:', component, node, node.outerHTML);
+
+            //TODO: 如果匹配出多个，需要循环翻译
+            if (component.length > 2)
+                console.info('神奇的一幕出现了，一个节点匹配到多个组件名称:', component);
+
+            walkComponent(component[1] || '__common', node);
+        } else {
+
+            transNode('__common', node);
+            // 继续下探
+            var nodes = node.childNodes;
+            for (var i = 0, len = nodes.length; i < len; i++) {
+                walk(nodes[i])
+            }
+        }
+    }
+
+    function walkComponent(component, node) {
+        if (ignore(node))
+            return;
+
+        // TODO: 快捷键会截断英文单词，如何翻译?
+        if (node.accesskey) {
+            console.log('存在快捷键', node);
+        }
+
+        transNode(component, node);
+
+        // 继续下探
+        var nodes = node.childNodes;
+        for (var i = 0, len = nodes.length; i < len; i++) {
+            walkComponent(component, nodes[i])
+        }
+    }
+
+    function transNode(component, node) {
         if (node.nodeType === Node.ELEMENT_NODE) { // 元素节点处理
             if (node.tagName === 'INPUT' || node.tagName === 'TEXTAREA') { // 输入框 按钮 文本域
                 if (node.type === 'button' || node.type === 'submit') {
@@ -132,13 +146,31 @@
         } else if (node.nodeType === Node.TEXT_NODE) { // 文本节点翻译
             transElement(component, node, 'data');
         }
+    }
 
-        var nodes = node.childNodes;
+    /**
+     * 检查节点是否需要跳过(不需要翻译)
+     * @param {Element} node 
+     */
+    function ignore(node) {
 
-        for (var i = 0, len = nodes.length; i < len; i++) {
-            var el = nodes[i];
+        // 跳过 style、link、script 节点
+        if (node.nodeType === Node.ELEMENT_NODE) {
+            if (node.tagName === 'STYLE' || node.tagName === 'LINK' || node.tagName === 'SCRIPT') {
+                return true;
+            }
+        }
 
-            walk(component, el);
+        // 跳过 Wiki文档, Git 文件浏览, 代码显示等
+        if (I18N.conf.reIgnore.test(node.className)) {
+            return true;
+        }
+
+        if (node.nodeType === Node.TEXT_NODE) {
+            // 跳过文本内容长度为1的文本
+            if (node['data'] !== null && node['data'].length === 1)
+                return true;
+            // TODO: 全是数字的文本节点也要过滤
         }
     }
 
@@ -163,6 +195,7 @@
         }
 
         if (transText === false) { // 无翻译则退出
+            console.log('翻译失败:', component, el, field, isAttr);
             return false;
         }
 
@@ -194,31 +227,25 @@
             return false;
         } // 内容为空不翻译
 
-        str = transComponent('pubilc', _key_neat); // 公共翻译
+        str = transComponent(component, _key_neat); // 翻译已知组件
 
-        if (str !== false && str !== _key_neat) { // 公共翻译完成
-            str = transComponent('pubilc', str) || str; // 二次公共翻译（为了弥补正则部分翻译的情况）
+        if (str !== false || str === _key_neat) { // 组件翻译完成
             return text.replace(_key, str); // 替换原字符，保留空白部分
         }
 
-        if (component === false) {
-            return false;
-        } // 未知页面不翻译
+        // 组件资源翻译失败后，尝试使用公共资源进行翻译
+        str = transComponent('__common', _key_neat); // 公共资源翻译
+        if (str !== false || str === _key_neat) { // 公共资源翻译完成
+            return text.replace(_key, str); // 替换原字符，保留空白部分
+        }
 
-        str = transComponent(component, _key_neat); // 翻译已知页面
-        if (str === false || str === '') {
-            console.log('翻译失败:', component, _key_neat);
-            return false;
-        } // 未知内容不翻译
-
-        str = transComponent('pubilc', str) || str; // 二次公共翻译（为了弥补正则部分翻译的情况）
-        return text.replace(_key, str); // 替换原字符，保留空白部分
+        return false;
     }
 
     /**
      * 翻译页面内容
      *
-     * @param {string} page 页面
+     * @param {string} component 组件
      * @param {string} key 待翻译内容
      *
      * @returns {string|boolean}
