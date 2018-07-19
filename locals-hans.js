@@ -86,9 +86,14 @@ I18N.zh = {
      */
     "__common": {
         "static": {
+            // 通用的按钮动作翻译
+            "Search": "搜索",
             "Click": "点击",
             "Off": "关闭",
             "On": "开启",
+
+            // TODO: 通用的概念名词翻译
+            // TODO: 通用的工作流程状态翻译
         },
         "regexp": [],
     },
@@ -440,9 +445,30 @@ I18N.zh = {
     },
     //#endregion
 
+
+    // 全局顶部搜索框
+    'expandable-search-header':{
+        'static': {
+            'This account': '本账户内搜索',
+            'This project': '本项目内搜索',
+            'Search': '键入关键词开始搜索'
+        },
+        "regexp": []
+    },
+    // 全局顶部搜索框操作提示
+    'search-filter-caption': {
+        'static': {
+            'Filter by field': '根据字段过滤',
+            'Operators': '操作符',
+            'e.g., Tags:"Release Blocker"': '例如: Tags:"Release Blocker"',
+            '(e.g., ToDo OR revisit)': '(例如: ToDo OR revisit)'
+        }
+    },
+
     /* 局部刷新内容 */
     "agile-hub-error": { //错误信息显示
-
+        'static': {},
+        "regexp": []
     },
 
     "zerodata": {
