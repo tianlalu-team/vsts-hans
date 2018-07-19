@@ -5,64 +5,58 @@ I18N.conf = {
     /**
      * 可以解析的组件伪类名
      */
-    reComponentClasses: [
-        // https://{account}.visualstudio.com/
-        'organization-navigation', // 左侧导航
-        'suite-me-page-view', // 页面主体
+    // reComponentClasses: [
 
+    // 页面级组件: 均位于 #vss_1 .internal-content-host 下
+    // https://{account}.visualstudio.com/{project}/**
+    // 'project-overview-page-container', // Overview -> Summary
+    // 'dashboard-landing', // Overview -> Dashboards
+    // 'wiki-container', // Overview -> Wiki
+    // 'work-items-hub-view', // Work -> Work Items
+    // 'work-items-hub-row', // Work -> Work Items/Row
+    // 'board-content-view',          // Work -> Boards / https://{account}.visualstudio.com/{project}/{team}/_boards
+    // 'backlog-content-view', // Work -> Backlogs
+    // 'sprint-view-container', // Note: 和 .internal-content-host 同级，应该是一个BUG
+    // 'queries-view', // NOTE: 监听不到这个节点被新增，此组件的翻译只能递归节点时来检查节点是否为组件
+    // 'versioncontrol-explorer-view', // Note: 不在 .internal-content-host 下
+    // 'versioncontrol-git-history-view', // Code -> Commites
+    //'versioncontrol-pushes-view', // Code -> Pushers
+    // 'vc-newbranches-view', // Code -> Branches
+    // 'git-tags-page', // Code -> Tags
+    // 'versioncontrol-pullrequest-list-view', // Code -> PRs
+    // 'versioncontrol-pullrequest-create-view', // Code -> PRs -> Create
+    // 'build-title-bar', // build
+    // 'pivotTab-link',
 
-        // 页面级组件: 均位于 #vss_1 .internal-content-host 下
-        // https://{account}.visualstudio.com/{project}/**
-        'vss-HubBreadcrumb', // 面包屑导航
+    // 'work-item-form-main',  // 工单的编辑页面 / https://{account}.visualstudio.com/{project}/_workitems/edit/{id}
 
-        'project-overview-page-container', // Overview -> Summary
-        'dashboard-landing', // Overview -> Dashboards
-        'wiki-container', // Overview -> Wiki
-        'work-items-hub-view', // Work -> Work Items
-        'work-items-hub-row', // Work -> Work Items/Row
-        'board-content-view', // Work -> Boards
-        'backlog-content-view', // Work -> Backlogs
-        'sprint-view-container', // Note: 和 .internal-content-host 同级，应该是一个BUG
-        'queries-view', // NOTE: 监听不到这个节点被新增，此组件的翻译只能递归节点时来检查节点是否为组件
-        'versioncontrol-explorer-view', // Note: 不在 .internal-content-host 下
-        'versioncontrol-git-history-view', // Code -> Commites
-        'versioncontrol-pushes-view', // Code -> Pushers
-        'vc-newbranches-view', // Code -> Branches
-        'git-tags-page', // Code -> Tags
-        'versioncontrol-pullrequest-list-view', // Code -> PRs
-        'versioncontrol-pullrequest-create-view', // Code -> PRs -> Create
-        'build-title-bar', // build
-        'pivotTab-link',
+    // // Widgets
+    // 'assigned-to-me', // 我的任务
+    // 'buildchart-container', // 构建图表
+    // 'new-work-item',
 
-        'work-item-form-main',  // 工单的编辑页面 / https://{account}.visualstudio.com/{project}/_workitems/edit/{id}
+    // // Dialogs
+    // 'new-workitem-dialog', // 创建工单
+    // 'vc-create-tag-dialog', // 创建代码 Tag  NOTE: 此节点不直接添加，此组件的翻译只能递归节点时来检查节点是否为组件
 
-        // Widgets
-        'assigned-to-me', // 我的任务
-        'buildchart-container', // 构建图表
-        'new-work-item',
-
-        // Dialogs
-        'new-workitem-dialog', // 创建工单
-        'vc-create-tag-dialog', // 创建代码 Tag  NOTE: 此节点不直接添加，此组件的翻译只能递归节点时来检查节点是否为组件
-
-        // 区域刷新
-        "zerodata", // 列表没有数据时
-        'grid-header-column', // 动态加载的表头列
-        'edit-readme-cta', // Overview -> Summary
-        'wiki-edit', // Overview -> Wiki
-        'wiki-new-page', // Overview -> Wiki
-        'commandbar-item', // 菜单项, 有大量菜单项被动态添加，尝试一下统一翻译
-        'vss-PickList--row', //'vss-PickList--element',  // 表格的下拉筛选器，应该时这个吧，先试试
-        'vss-PickList--noItemsText', // 下拉框没有数据时的提示
-        'ms-ContextualMenu-item', // 左侧菜单鼠标悬浮滑出子菜单
-        'ms-Tooltip', // 浮动提示
-        'ms-Button-textContainer', // 补充按钮文本
-        'ms-CommandBarItem-link', // 链接按钮
-        'ms-Dropdown-item', // 还是操作按钮
-        "ms-DetailsHeader-cell", // 表格的表头
-        "members-title-div", // 项目首页成员标题
-        "activity-panel", // 项目首页活动面板
-    ],
+    // // 区域刷新
+    // "zerodata", // 列表没有数据时
+    // 'grid-header-column', // 动态加载的表头列
+    // 'edit-readme-cta', // Overview -> Summary
+    // 'wiki-edit', // Overview -> Wiki
+    // 'wiki-new-page', // Overview -> Wiki
+    // 'commandbar-item', // 菜单项, 有大量菜单项被动态添加，尝试一下统一翻译
+    // 'vss-PickList--row', //'vss-PickList--element',  // 表格的下拉筛选器，应该时这个吧，先试试
+    // 'vss-PickList--noItemsText', // 下拉框没有数据时的提示
+    // 'ms-ContextualMenu-item', // 左侧菜单鼠标悬浮滑出子菜单
+    // 'ms-Tooltip', // 浮动提示
+    // 'ms-Button-textContainer', // 补充按钮文本
+    // 'ms-CommandBarItem-link', // 链接按钮
+    // 'ms-Dropdown-item', // 还是操作按钮
+    // "ms-DetailsHeader-cell", // 表格的表头
+    // "members-title-div", // 项目首页成员标题
+    // "activity-panel", // 项目首页活动面板
+    // ],
 
     /**
      * 需要跳过的节点
@@ -74,14 +68,23 @@ I18N.conf = {
 
 I18N.zh = {
 
+    //#region 标题翻译
     "title": {  // 页面标题翻译
         "static": {
         },
         "regexp": [
         ],
     },
+    //#endregion
 
-    "pubilc": {  // 公共内容翻译
+    //#region 公共内容翻译
+    /**
+     * 此处定义一些公共的内容翻译
+     *    1. 通用的按钮动作翻译
+     *    2. 通用的概念名词翻译
+     *    3. 通用的工作流程状态翻译
+     */
+    "pubilc": {
         "static": {
             "Click": "点击",
             "Off": "关闭",
@@ -89,10 +92,13 @@ I18N.zh = {
         },
         "regexp": [],
     },
+    //#endregion
 
+    //#region 全局资源定义
     /**
      * 全局资源定义, 以'_global'开头, 通过对象扩展的方式扩展到组件翻译资源中，例如:
      *    $.extend(true, I18N.zh["page"], I18N.zh["_global-navigation"]);
+     * // TODO: 逐步移入 public 中
      */
     "global-navigation": { // 全局导航
         "static": {
@@ -183,14 +189,18 @@ I18N.zh = {
             "Activity Date": "最后更新时间",
         },
     },
+    //#endregion
 
     /* 页面非动态加载内容的翻译 */
     "page": {
         "static": {}
     },
 
-    // 组件翻译
-    "organization-navigation": { // https://{account}.visualstudio.com/ 左侧菜单
+    //#region 团队首页
+    /**
+     * https://{account}.visualstudio.com/ 团队首页
+     */
+    "organization-navigation": { // 左侧菜单(团队清单)
         "static": {
             "My accounts": "我的账户",
             "Related pages": "相关页面",
@@ -211,43 +221,30 @@ I18N.zh = {
             //"Enter title": "输入标题",
         }
     },
-
-    "suite-me-page-view": { // https://{account}.visualstudio.com/ 主页面
+    "suite-me-page-view": { // 主页面(团队项目列表)
         "static": {
             "Projects": "项目列表",
             "Filter projects": "项目过滤",
             "Create project": "新建项目",
         }
     },
+    //#endregion
 
-    "vss-HubBreadcrumb": {
+    /**
+     * 跨页面组件
+     */
+    "vss-HubBreadcrumb": { // 顶部面包屑导航
         "static": {},
     },
 
-    "work-items-hub-view": { // https://{account}.visualstudio.com/{project}/_workitems/
-        "static": {
-            "Work Items": "工单",
+    /**
+     * 页面级组件翻译, 指的是一个页面的最主要的组件
+     * 通常都位于 $("div[data-renderedregion='content'] .internal-content-host") 下面，也有少量组件不在这个位置
+     * 不管在不在这个位置，其实不影响翻译，只是作为定位这个组件的参考
+     */
 
-
-            "Filter by keyword": "关键词过滤",
-            "Types filter": "类型过滤",
-            "Types": "工单类型",
-            "States filter": "状态过滤",
-            "States": "工单状态",
-            "Area filter": "功能区域过滤",
-            "Area": "功能区域",
-            "Tags filter": "标签过滤",
-            "Tags": "标签",
-            "Assigned to filter": "指派过滤",
-            "Assigned to": "指派到人",
-
-        },
-        "regexp": [],
-    },
-    'work-items-hub-row': {
-        "static": {},
-    },
-
+    //#region Overview -> Summary
+    // https://{account}.visualstudio.com/{project}
     "project-overview-page-container": {
         "static": {
             "Project Information": "项目信息",
@@ -275,8 +272,179 @@ I18N.zh = {
             [/by 1 authors/, "由1个作者提交"],
         ]
     },
+    //#endregion
+
+    //#region Overview -> Dashboards
+    // https://{account}.visualstudio.com/{project}/_dashboards
+    'dashboard-landing': {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
+
+    //#region Overview -> Wiki
+    // https://{account}.visualstudio.com/{project}/_wiki
+    'wiki-container': {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
+
+    //#region Overview -> Work Items
+    // https://{account}.visualstudio.com/{project}/_workitems/assignedtome
+    // https://{account}.visualstudio.com/{project}/_workitems/following
+    // https://{account}.visualstudio.com/{project}/_workitems/mentioned
+    // https://{account}.visualstudio.com/{project}/_workitems/myactivity
+    // https://{account}.visualstudio.com/{project}/_workitems/recentlyupdated
+    // https://{account}.visualstudio.com/{project}/_workitems/recentlycompleted
+    // https://{account}.visualstudio.com/{project}/_workitems/recentlycreated
+    "work-items-hub-view": {
+        "static": {
+            "Work Items": "工单",
+
+
+            "Filter by keyword": "关键词过滤",
+            "Types filter": "类型过滤",
+            "Types": "工单类型",
+            "States filter": "状态过滤",
+            "States": "工单状态",
+            "Area filter": "功能区域过滤",
+            "Area": "功能区域",
+            "Tags filter": "标签过滤",
+            "Tags": "标签",
+            "Assigned to filter": "指派过滤",
+            "Assigned to": "指派到人",
+
+        },
+        "regexp": [],
+    },
+    // 工单列表中的每一行
+    'work-items-hub-row': {
+        "static": {},
+        "regexp": [],
+    },
+    //#endregion
+
+    //#region Work -> Boards & Work -> Backlogs
+    // https://{account}.visualstudio.com/{project}/_boards/board/{team}
+    // TODO: 该页面切换工单类型(史诗、特性、故事)时，重新加载子组件区域，父组件并不重新加载
+    "board-content-view": {
+        'static': {},
+        "regexp": []
+    },
+    // https://{account}.visualstudio.com/{project}/{team}/_boards/all
+    // https://{account}.visualstudio.com/{project}/{team}_boards/mine
+    // https://{account}.visualstudio.com/{project}/{team}/_backlogs/all
+    // https://{account}.visualstudio.com/{project}/{team}/_backlogs/mine
+    "directory-content": {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
+
+    //#region Work -> Sprints
+    // https://{account}.visualstudio.com/{project}/_sprints/all
+    // https://{account}.visualstudio.com/{project}/_sprints/mine
+    "sprints-directory-content": {
+        'static': {},
+        "regexp": []
+    },
+    // https://{account}.visualstudio.com/{project}/_sprints/taskboard/{team}/Zeus/{iteration}
+    "sprint-view-container": {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
+
+    //#region Work -> Queries
+    // https://{account}.visualstudio.com/{project}/_queries/all
+    // https://{account}.visualstudio.com/{project}/_queries/favorites
+    // NOTE: 监听不到这个节点被新增，此组件的翻译只能递归节点时来检查节点是否为组件
+    "queries-view": {
+        'static': {},
+        "regexp": []
+    },
+    // https://{account}.visualstudio.com/{project}/_queries/query/{queryid}
+    "triage-view-hub-container": {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
+
+    //#region Code -> Files
+    // https://{account}.visualstudio.com/{project}/_git/{repo}
+    'versioncontrol-explorer-view': {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
+
+    //#region Code -> Commites
+    // https://{account}.visualstudio.com/{project}/_git/{repo}/commits
+    'versioncontrol-git-history-view': {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
+
+    //#region Code -> Pushers
+    // https://{account}.visualstudio.com/{project}/_git/{repo}/pushes
+    'versioncontrol-pushes-view': {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
+
+    //#region Code -> Branches
+    // https://{account}.visualstudio.com/{project}/_git/{repo}/branches
+    'vc-newbranches-view': {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
+
+    //#region Code -> Tags
+    // https://{account}.visualstudio.com/{project}/_git/{repo}/tags
+    'git-tags-page': {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
+
+    //#region Code -> Pull Requests
+    // https://{account}.visualstudio.com/{project}/_git/{repo}/pullrequests
+    'versioncontrol-pullrequest-list-view': {
+        'static': {},
+        "regexp": []
+    },
+
+    // Code -> Pull Requests -> New pull requests
+    // https://{account}.visualstudio.com/{project}/_git/{repo}/pullrequestcreate
+    'versioncontrol-pullrequest-create-view': {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
+
+    //#region Build & Release -> Build
+    // https://{account}.visualstudio.com/{project}/_build
+    'build-definitions-view': {
+        'static': {},
+        "regexp": []
+    },
+    // Build & Release -> Build -> New
+    // https://{account}.visualstudio.com/{project}/_apps/hub/ms.vss-ciworkflow.build-ci-hub
+    'ci-getting-started-container': {
+        'static': {},
+        "regexp": []
+    },
+    //#endregion
 
     /* 局部刷新内容 */
+    "agile-hub-error": { //错误信息显示
+
+    },
+
     "zerodata": {
         "static": {
             "Keep an eye on important work": "请时刻关注重要的工作",
@@ -410,7 +578,7 @@ I18N.zh = {
             'Queued': '排队',
             'Running': '运行',
             '7-day pass rate': '最近7天成功率',
-            'Last built':'最近一次运行'
+            'Last built': '最近一次运行'
         },
     },
     "members-title-div": {
@@ -433,7 +601,7 @@ I18N.zh = {
             'New': '新建',
             'Import': '导入',
             'Security': '安全',
-            'Manage folders':'管理文件夹',
+            'Manage folders': '管理文件夹',
             'Help': '帮助',
         }
     },
@@ -450,7 +618,7 @@ I18N.zh = {
 $.extend(true, I18N.zh["page"], I18N.zh["global-navigation"]);
 $.extend(true, I18N.zh["commandbar-item"], I18N.zh["global-navigation"]);
 $.extend(true, I18N.zh["vss-HubBreadcrumb"], I18N.zh["global-navigation"]);
-$.extend(true, I18N.zh["vss-PickList--row" /*"vss-PickList--element"*/ ], I18N.zh["global-work-item-type"], I18N.zh["global-work-item-state"], I18N.zh["global-work-item-assigned"]);
+$.extend(true, I18N.zh["vss-PickList--row" /*"vss-PickList--element"*/], I18N.zh["global-work-item-type"], I18N.zh["global-work-item-state"], I18N.zh["global-work-item-assigned"]);
 $.extend(true, I18N.zh["ms-Button-textContainer"], I18N.zh["global-btn-text"]);
 $.extend(true, I18N.zh["ms-ContextualMenu-item"], I18N.zh["global-navigation"], I18N.zh["global-work-item-type"], I18N.zh["global-btn-text"]);
 $.extend(true, I18N.zh["ms-CommandBarItem-link"], I18N.zh["global-navigation"], I18N.zh["global-work-item-type"], I18N.zh["global-btn-text"]);
