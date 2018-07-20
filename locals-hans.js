@@ -94,7 +94,8 @@ I18N.zh = {
             "Add to favorites": "收藏",
             "Admin settings": "设置",
             "All clear!": "全清!",
-            "An estimate of the number of units of work remaining to complete this bug": "估计解决此BUG还需要多少时间",
+            "An estimate of the number of units of work remaining to complete this bug": "估计解决此BUG还需要多少单位的工作量",
+            "An estimate of the number of units of work remaining to complete this task": "估计完成此任务还需要多少单位的工作量",
             "Are you sure you want to delete the selected work item(s)?": "你确定要删除这些选中的工单吗?",
             "Are you sure you want to leave the page?": "你确定要离开页面吗？",
             "Area": "功能区域",
@@ -112,6 +113,7 @@ I18N.zh = {
             "Back to \"Recently created\" tab (Alt + Q)": "返回\"最近创建\"页面(Alt + Q)",
             "Backlogs": "积压",
             "Boards": "看板",
+            "Bold (Ctrl+B)": "粗体 (Ctrl+B)",
             "Branches": "分支",
             "Build": "构建",
             "Build & Release": "构建和发布",
@@ -120,6 +122,7 @@ I18N.zh = {
             "Build ID or build number": "Build Id 或内部版本号",
             "Builds": "构建",
             "Builds succeeded": "成功的构建",
+            "Bulleted list": "无序列表",
             "Business = Customer-facing epics; Architectural = Technology initiatives to support current and future business needs": "Business = 给客户带来商业价值的史诗任务; Architectural = 支持当前及未来业务需求所需要开展的技术措施",
             "Business = delivers value to a user or another system; Architectural = work to support other stories or components": "Business = 为用户或其他系统提供商业价值; Architectural = 支持其他用户故事的组件或工作",
             "Business = Services provided by the system to fulfill stakeholder needs; Architectural = Technical system services to implement business features that deliver solution value": "Business = 系统提供的服务，用以满足利益相关者的需求; Architectural = 技术系统服务，用以实现提供解决方案价值的业务功能",
@@ -155,6 +158,7 @@ I18N.zh = {
             "Confirm": "确认",
             "Copy to clipboard": "复制到剪贴板",
             "Create copy of work item...": "创建工单副本",
+            "Create link": "创建链接",
             "Create new project": "创建一个新项目",
             "Create project": "新建项目",
             "created": "新建的",
@@ -162,6 +166,7 @@ I18N.zh = {
             "Customize": "个性化",
 
             "Dashboards": "仪表板",
+            "Decrease indent": "减少缩进",
             "Default branch summary": "默认分支摘要",
             "Delete": "删除",
             "Delete work item(s)": "删除工作项",
@@ -232,13 +237,18 @@ I18N.zh = {
             "How does the business value decay over time. Higher values make the feature more time critical": "商业价值会随着时间的流逝而衰退，商业价值更高的特性往往需要更紧迫的时间",
             "How to see the bug. End by contrasting expected with actual behavior.": "清晰的描述BUG如何重现的步骤。并且在最后，说明预期行为与实际行的对比。",
 
+            "Implementation": "实现",
             "Import": "导入",
+            "Importance to business": "对业务的重要性",
             "In Progress": "处理中(In Progress)",
+            "Increase indent": "增加缩进",
             "Initial value for Remaining Work - set once, when work begins": "当开始此项工作时，一次性设置一个预估需要的时间",
+            "Insert image": "插入图片",
             "Integrated in Build": "集成于构建",
             "Integrated in build": "集成于构建",
             //"Interactive chart. Chart. Use up and down arrows to navigate with most screen readers.": "",
             "Issue": "问题",
+            "Italic (Ctrl+I)": "斜体 (Ctrl+I)",
 
             "Keep an eye on important work": "请时刻关注重要的工作",
             "Keyboard shortcuts": "键盘快捷键",
@@ -280,6 +290,7 @@ I18N.zh = {
             "New": "新建", // TODO: 新建按钮 
             "New": "待确认(New)",
             "New = for triage; Active = not yet fixed; Resolved = fixed not yet verified; Closed = fix verified.": "New = 等待; Active = 尚未修复; Resolved = 已修复但未验证; Closed = 修复得到验证",
+            "New = New work not yet activated; Active = work remains to be done; Closed = tested and checked in.": "New = 未激活的新任务; Active = 任务进行中未完成; Closed = 经过测试并签入",
             "New = Not started yet; Active = work remains to be done; Resolved = awaiting acceptance tests; Closed = acceptance tests passed": "New = 尚未开始; Active = 工作待完成; Resolved = 等待验收测试; Closed = 验收测试通过",
             "New branch...": "新建分支...",
             "New item": "创建新项",
@@ -299,6 +310,7 @@ I18N.zh = {
             "No states available": "当前没有任何工单状态",
             "Notification settings": "通知设置",
             //"Number of Commits per day": "",
+            "Numbered list": "有序列表",
 
             "Off": "关闭",
             "On": "开启",
@@ -343,6 +355,7 @@ I18N.zh = {
             "Related Work": "相关工作",
             "Releases": "发布",
             "Remaining": "余量",
+            "Remove Formatting": "清楚格式",
             "Remove from favorites": "取消收藏",
             "Remove link": "取消关联",
             "Remove this column": "移除此列",
@@ -370,6 +383,7 @@ I18N.zh = {
             "Search": "搜索",
             //"Search": "键入关键词开始搜索", //todo:
             "Security": "安全",
+            "Suggestions": "建议",
             "Severity": "严重性",
             "Show": "显示",
             "Show filters": "显示过滤器",
@@ -409,6 +423,7 @@ I18N.zh = {
             "Test Suite": "测试套件(Test Suite)",
             "Testing": "测试",
             "There are no links in this group.": "此组中没有链接。",
+            "The area of the product to which this task contributes": "此任务贡献的产品区域",
             "The area of the product with which this bug is associated": "与此BUG相关联的产品功能区域",
             "The area of the product with which this epic is associated": "与此史诗故事相关联的产品功能区域",
             "The area of the product with which this feature is associated": "与此特性相关联的产品功能区域",
@@ -422,12 +437,15 @@ I18N.zh = {
             "The iteration within which this bug will be fixed": "该BUG计划在哪个迭代进行修复",
             "The iteration within which this epic will be implemented": "该史诗故事计划在哪个迭代中实现",
             "The iteration within which this feature will be implemented": "该特性计划在哪个迭代中实现",
+            "The iteration within which this task will be completed": "该任务计划在哪个迭代中完成",
             "The iteration within which this user story will be implemented": "该用户故事计划在哪个迭代中实现",
-            "The number of units of work that have been spent on this bug": "已经花在这个BUG上的时间",
+            "The number of units of work that have been spent on this bug": "已经消耗在这个BUG上的工作量",
+            "The number of units of work that have been spent on this task": "已经消耗在这个任务上的工作量",
             "The reason why the bug is in the current state": "BUG之所以处于当前状态的原因",
             "The reason why the epic is in its current state": "史诗故事之所以处于当前状态的原因",
             "The reason why the feature is in its current state": "特性之所以处于当前状态的原因",
             "The reason why the story is in its current state": "用户故事之所以处于当前状态的原因",
+            "The reason why the task is in its current state": "任务之所以处于当前状态的原因",
             "The reason why the bug was resolved": "错误解决的原因",
             "The size of work estimated for fixing the bug": "估计修复这个BUG的工作量",
             "The size of work estimated for implementing this user story": "估计实现这个用户格式的工作量",
@@ -447,6 +465,7 @@ I18N.zh = {
             "Unassigned": "未指派",
             "Uncertainty in feature": "特性面临不确定性时，用于提示风险",
             "Uncertainty in requirement or design": "需求和设计面临不确定性时，用于提示风险",
+            "Underline (Ctrl+U)": "下划线 (Ctrl+U)",
             "Unpin item": "从快捷栏取消固定",
             "Upload file(s)": "上传文件",
             "Usage": "使用详情",
@@ -458,6 +477,7 @@ I18N.zh = {
 
             "What's new in VSTS": "VSTS 新特性(英文)",
             "Work": "工作",
+            "What to do, pointers to resources and inputs, design notes, exit criteria": "该怎么做，指明资源和输入条件、设计说明、以及完成标准",
             "Work Items": "工单",
             "Work item process": "工作组织流程",
 
@@ -470,5 +490,11 @@ I18N.zh = {
             [/by (\d+) authors/, "由 $1 个作者提交"],
             [/(\d+) comments/, "$1 条讨论话题"],
         ]
+    },
+
+    "richeditor-toolbar": {
+        "static": {
+            "Remove link": "移除链接",
+        }
     }
 };
