@@ -120,8 +120,10 @@ I18N.zh = {
             "Build ID or build number": "Build Id 或内部版本号",
             "Builds": "构建",
             "Builds succeeded": "成功的构建",
+            "Business = Customer-facing epics; Architectural = Technology initiatives to support current and future business needs": "Business = 给客户带来商业价值的史诗任务; Architectural = 支持当前及未来业务需求所需要开展的技术措施",
             "Business = delivers value to a user or another system; Architectural = work to support other stories or components": "Business = 为用户或其他系统提供商业价值; Architectural = 支持其他用户故事的组件或工作",
             "Business importance. 1=must fix; 4=unimportant.": "业务重要性。1=必须修复; 4=不重要。", //TODO: 此条翻译失败，原因待查
+            "Business Value": "商业价值",
 
             "Cancel": "取消",
             "Change": "切换页面",
@@ -134,6 +136,7 @@ I18N.zh = {
             "Clear": "清除",
             "Click": "点击",
             "Close": "关闭",
+            "Close (ESC)": "关闭 (ESC)",
             "closed": "关闭的",
             "Closed": "关闭的(Closed)",
             "Code": "代码",
@@ -148,6 +151,7 @@ I18N.zh = {
             "Completed Work Items": "已完结的工单",
             "Comment": "注释",
             "Commits": "提交",
+            "Confirm": "确认",
             "Copy to clipboard": "复制到剪贴板",
             "Create copy of work item...": "创建工单副本",
             "Create new project": "创建一个新项目",
@@ -155,7 +159,6 @@ I18N.zh = {
             "created": "新建的",
             "Created Date": "创建日期",
             "Customize": "个性化",
-
 
             "Dashboards": "仪表板",
             "Default branch summary": "默认分支摘要",
@@ -182,10 +185,12 @@ I18N.zh = {
             "Edit in Wiki": "在 Wiki 中编辑此页", // 翻译失败, 会再次动态生成节点 .edit-readme-cta
             "Edit in Wiki": "在 Wiki 中编辑此页",
             "Edit page": "编辑页面",
+            "Effort": "工作量(小时)",
             "Effort (Hours)": "工作量(小时)",
             "Email...": "通过邮件发送...",
             "Email work item": "发送到邮件",
             "Enter full screen mode": "进入全屏模式",
+            "Enter full screen mode (Z)": "进入全屏模式(Z)",
             "Enter title": "输入标题",
             "Epic": "史诗故事",
             "Epics": "史诗故事",
@@ -195,6 +200,7 @@ I18N.zh = {
             "Epics": "史诗故事",
             "Existing item": "现有的项",
             "Exit full screen mode": "退出全屏模式",
+            "Exit full screen mode (z)": "退出全屏模式",
 
             "Favorites": "收藏",
             "Feature": "特性",
@@ -219,6 +225,7 @@ I18N.zh = {
             "Hide": "隐藏",
             "Hide filters": "隐藏过滤器",
             "History": "历史",
+            "How does the business value decay over time. Higher values make the epic more time critical": "商业价值会随着时间的流逝而衰退，商业价值更高的史诗故事往往需要更紧迫的时间",
             "How to see the bug. End by contrasting expected with actual behavior.": "清晰的描述BUG如何重现的步骤。并且在最后，说明预期行为与实际行的对比。",
 
             "Import": "导入",
@@ -258,6 +265,7 @@ I18N.zh = {
             "Mentioned": "@提到过我",
             "Mine": "我的",
             "More Actions...": "更多...",
+            "More save options": "更多保存选项",
             "Move to team project": "移动到团队项目",
             "My activity": "看不懂的(My activity)",
             "My accounts": "我的账户",
@@ -309,6 +317,7 @@ I18N.zh = {
             "Previous work item in the \"Assigned to me\" tab (Alt + P)": "\"指派给我\"页面的上一个工单 (Alt + P)",
             "Previous work item in the \"Recently created\" tab (Alt + P)": "\"最近创建\"页面的上一个工单 (Alt + P)",
             "Preview features": "预览新功能",
+            "Priority for completing the epic, based on business goals": "基于业务目标评定史诗任务的优先级",
             "Pull Requests": "拉取请求",
             "Pull requests": "拉取请求",
             "Pushes": "推送记录",
@@ -351,6 +360,7 @@ I18N.zh = {
             //"Runs" : "测试",
 
             "Save": "保存",
+            "Save & Close": "保存并关闭",
             "Search": "搜索",
             //"Search": "键入关键词开始搜索", //todo:
             "Security": "安全",
@@ -382,6 +392,7 @@ I18N.zh = {
             "Tags": "标签",
             "Tags": "标签",
             "Tags filter": "标签过滤",
+            "Target Date": "目标日期",
             "Templates": "模板",
             "Task": "任务",
             "Task groups": "任务分组",
@@ -396,6 +407,8 @@ I18N.zh = {
             "The area of the product with which this user story is associated": "与此用户故事相关联的产品功能区域",
             "The build in which the bug was found": "BUG产生于哪一次构建",
             "The build in which the bug was fixed": "BUG修复于哪一次构建",
+            "The business value for the customer when the epic is released": "史诗故事发布给客户带来的商业价值",
+            "The estimated effort to implemented the epic": "估计实现史诗所需要的工作量",
             "The iteration within which this bug will be fixed": "该BUG计划在哪个迭代进行修复",
             "The iteration within which this user story will be implemented": "该用户故事计划在哪个迭代进行修复",
             "The number of units of work that have been spent on this bug": "已经花在这个BUG上的时间",
@@ -404,8 +417,10 @@ I18N.zh = {
             "The reason why the bug was resolved": "错误解决的原因",
             "The size of work estimated for fixing the bug": "估计修复这个BUG的工作量",
             "The size of work estimated for implementing this user story": "估计实现这个用户格式的工作量",
+            "The target date for completing the epic": "完成史诗任务的目标日期",
             "This account": "本账户内搜索",
             "This project": "本项目内搜索",
+            "Time Criticality": "时间紧迫性",
             //"Time range for showing activity data": "",
             "Title": "标题",
             "to get updates about the items you want to track.": "获取跟进的工单的进度更新。",
@@ -432,6 +447,7 @@ I18N.zh = {
             // X
 
             "You can restore deleted work items from the Recycle Bin until they are permanently deleted based on auto-delete settings (disabled).": "在它们根据自动删除设置（已禁用）被永久删除之前，您都可以从回收站还原已删除的工作项。",
+            "You have modified this work item.  Close and lose changes?": "您已经修改了工单，关闭此页面会导致修改丢失，确认吗？",
         },
         "regexp": [
             [/by (\d+) authors/, "由 $1 个作者提交"],
