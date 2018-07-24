@@ -44,7 +44,7 @@
      *    特殊化翻译首先根据匹配到的class进行特殊化翻译，翻译不成功用普通翻译进行补充
      */
 
-    var debug = true; // 调试模式
+    var debug = false; // 调试模式
     var lang = 'zh'; // 中文
 
     // 构建正则表达式
