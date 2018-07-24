@@ -142,7 +142,7 @@ I18N.zh = {
             "Close": "关闭",
             "Close (ESC)": "关闭 (ESC)",
             "closed": "关闭的",
-            "Closed": "关闭的(Closed)",
+            //"Closed": "关闭的(Closed)",
             "Change to Closed when the issue is resolved or not relevant anymore": "在问题解决或不再具有相关性时，将状态更改为已结束(Closed)",
             "Code": "代码",
             // "Code": "代码动态",s
@@ -242,7 +242,7 @@ I18N.zh = {
             "Implementation": "实现",
             "Import": "导入",
             "Importance to business": "对业务的重要性",
-            "In Progress": "处理中(In Progress)",
+            //"In Progress": "处理中(In Progress)",
             "Increase indent": "增加缩进",
             "Initial value for Remaining Work - set once, when work begins": "当开始此项工作时，一次性设置一个预估需要的时间",
             "Insert image": "插入图片",
