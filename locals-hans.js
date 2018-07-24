@@ -83,7 +83,7 @@ I18N.zh = {
             "Actions": "操作",
             "Activated By": "由他激活",
             "Activated Date": "激活日期",
-            "Active": "已确认(Active)",
+            //"Active": "已确认(Active)",
             "Activity": "动态", // TODO: 在工作项中有字段名称也是'Activity'，但显然不是这个意思
             "Activity Date": "最后更新时间",
             "Add a column": "增加一列",
@@ -290,7 +290,7 @@ I18N.zh = {
             "My profile": "个人档案",
 
             "New": "新建", // TODO: 新建按钮 
-            "New": "待确认(New)",
+            //"New": "待确认(New)",
             "New = for triage; Active = not yet fixed; Resolved = fixed not yet verified; Closed = fix verified.": "New = 等待; Active = 尚未修复; Resolved = 已修复但未验证; Closed = 修复得到验证",
             "New = New work not yet activated; Active = work remains to be done; Closed = tested and checked in.": "New = 未激活的新任务; Active = 任务进行中未完成; Closed = 经过测试并签入",
             "New = Not started yet; Active = work remains to be done; Resolved = awaiting acceptance tests; Closed = acceptance tests passed": "New = 尚未开始; Active = 工作待完成; Resolved = 等待验收测试; Closed = 验收测试通过",
