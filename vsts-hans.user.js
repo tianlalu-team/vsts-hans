@@ -195,8 +195,10 @@
             }
 
             // 全是数字的文本节点也要过滤
-            if (/\d+/.test(text))
+            if (/^\d+$/.test(text)) {
+                log('跳过全数字文本', node, node.outerHTML);
                 return true;
+            }
         }
 
         // 工单标记窗口中对于工单状态动态添加如下 node:
