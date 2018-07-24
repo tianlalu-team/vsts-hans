@@ -25,6 +25,7 @@
     // 测试代码,测试组件内翻译失败时会调用公共翻译资源进行再一次翻译
     // I18N.zh['__common']['static']['Search'] = '搜索(本翻译来自于 __common)';
     // I18N.zh['__global-navigation'] = undefined;
+    // I18N.zh['__common']['regexp'].push([/Planned Effort: (\d+)/, "计划工作量: $1"]);
 
     // I18N.zh['search-filter-caption'] = {
     //     'static': {
@@ -134,6 +135,11 @@
         }
     }
 
+    /**
+     * 对 Html Document 对象节点进行翻译
+     * @param {string} component 
+     * @param {Element} node
+     */
     function transNode(component, node) {
         if (node.nodeType === Node.ELEMENT_NODE) { // 元素节点处理
             if (node.tagName === 'INPUT' || node.tagName === 'TEXTAREA') { // 输入框 按钮 文本域
