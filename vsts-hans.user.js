@@ -43,6 +43,7 @@
      *    特殊化翻译首先根据匹配到的class进行特殊化翻译，翻译不成功用普通翻译进行补充
      */
 
+    var debug = true; // 调试模式
     var lang = 'zh'; // 中文
 
     // 构建正则表达式
@@ -54,18 +55,19 @@
     I18N.conf.reIgnore = eval('/(' + I18N.conf.reIgnoreClasses.join("|") + ')/');
 
     window.addEventListener('load', function () {
+        log('文档onload')
         walk(document.body);
     });
 
     // 在一个节点作为子节点被插入到另一个节点中时触发;
     document.addEventListener('DOMNodeInserted', function (e) {
-        // console.info('动态增加节点:', e.target, e.target.outerHTML);
+        log('动态增加节点:', e.target, e.target.outerHTML);
         walk(e.target);
     });
 
     // 在DOM结构中发生任何变化时触发
     // document.addEventListener('DOMSubtreeModified', function (e) {
-    //     console.log(e);
+    //     //log(e);
     // });
 
     // 在文本节点的值发生变化的时候触发
@@ -75,7 +77,7 @@
         if (str !== false || str === e.newValue) { // 组件翻译完成
             e.target['data'] = str;
         } else {
-            // console.log('文本变更', e);
+            log('文本变更', e);
         }
     });
 
@@ -85,7 +87,7 @@
 
         // TODO: 快捷键会截断英文单词，如何翻译?
         if (node.accesskey) {
-            console.log('存在快捷键', node);
+            log('存在快捷键', node);
         }
 
         var component = false;
@@ -96,12 +98,11 @@
         }
 
         if (component) {
-            // debug:
-            // console.info('匹配组件成功:', component, node, node.outerHTML);
+            log('匹配组件成功:', component, node, node.outerHTML);
 
             //TODO: 如果匹配出多个，需要循环翻译
             if (component.length > 2)
-                console.info('神奇的一幕出现了，一个节点匹配到多个组件名称:', component);
+                log('神奇的一幕出现了，一个节点匹配到多个组件名称:', component);
 
             walkComponent(component[1] || '__common', node);
         } else {
@@ -121,7 +122,7 @@
 
         // TODO: 快捷键会截断英文单词，如何翻译?
         if (node.accesskey) {
-            console.log('存在快捷键', node);
+            log('存在快捷键', node);
         }
 
         transNode(component, node);
@@ -173,20 +174,24 @@
         // 跳过 style、link、script 节点
         if (node.nodeType === Node.ELEMENT_NODE) {
             if (node.tagName === 'STYLE' || node.tagName === 'LINK' || node.tagName === 'SCRIPT') {
+                log('跳过 style、link、script 节点', node, node.outerHTML);
                 return true;
             }
         }
 
         // 跳过 Wiki文档, Git 文件浏览, 代码显示等
         if (I18N.conf.reIgnore.test(node.className)) {
+            log('跳过 class 匹配到的节点', node, node.outerHTML);
             return true;
         }
 
         if (node.nodeType === Node.TEXT_NODE) {
             // 跳过文本内容长度为1的文本
             var text = node['data'];
-            if (text !== null && text.length === 1)
+            if (text !== null && text.length === 1) {
+                log('跳过单独的英文字母', node, node.outerHTML);
                 return true;
+            }
 
             // 全是数字的文本节点也要过滤
             if (/\d+/.test(text))
@@ -197,6 +202,7 @@
         //    <li id="353" role="option" aria-posinset="3" aria-setsize="5" data-id="2">New</li>
         // 此节点无需翻译，因此节点不含class，无法通过class进行过滤，所以采用写死的方式，TODO: 此方法待验证
         if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'LI' && node.hasAttribute('role') && node.getAttribute('role') === 'option') {
+            log("li[role='option']", node, node.outerHTML);
             return true;
         }
 
@@ -224,7 +230,7 @@
         }
 
         if (transText === false) { // 无翻译则退出
-            console.log('翻译失败:', component, el, field, isAttr);
+            log('翻译失败:', component, el, field, isAttr);
             return false;
         }
 
@@ -295,7 +301,7 @@
             return str;
         }
 
-        // console.log('尝试使用正则表达式翻译:', component, key)
+        log('尝试使用正则表达式翻译:', component, key)
         // 正则翻译
         res = I18N[lang][component].regexp;
         if (res) {
@@ -308,5 +314,10 @@
         }
 
         return false; // 没有翻译条目
+    }
+
+    function log(message, optionalParams) {
+        if (debug)
+            console.log(message, optionalParams);
     }
 })(window, document);
