@@ -192,6 +192,15 @@
             if (/\d+/.test(text))
                 return true;
         }
+
+        // 工单标记窗口中对于工单状态动态添加如下 node:
+        //    <li id="353" role="option" aria-posinset="3" aria-setsize="5" data-id="2">New</li>
+        // 此节点无需翻译，因此节点不含class，无法通过class进行过滤，所以采用写死的方式，TODO: 此方法待验证
+        if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'LI' && node.hasAttribute('role') && node.getAttribute('role') === 'option') {
+            return true;
+        }
+
+        return false;
     }
 
 
