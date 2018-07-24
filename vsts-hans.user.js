@@ -161,6 +161,7 @@
             //    transElement(node.dataset, 'disableWith');
             //}
         } else if (node.nodeType === Node.TEXT_NODE) { // 文本节点翻译
+            log("翻译文本, component = " + component + ", node = " +  node);
             transElement(component, node, 'data');
         }
     }
@@ -230,7 +231,7 @@
         }
 
         if (transText === false) { // 无翻译则退出
-            log('翻译失败:', component, el, field, isAttr);
+            log("翻译失败, component = " + component + ", el = " +  el + ", field = " +  field + ", isAttr = " +  isAttr);
             return false;
         }
 
@@ -251,6 +252,9 @@
      * @returns {string|boolean}
      */
     function translate(text, component) { // 翻译
+        // log("translate", text, component);
+        log("translate, component = " + component + ", text = " +  text);
+
         var str;
         var _key = text.trim(); // 去除首尾空格的 key
         var _key_neat = _key
@@ -301,7 +305,7 @@
             return str;
         }
 
-        log('尝试使用正则表达式翻译:', component, key)
+        log("尝试使用正则表达式翻译, component = " + component + ", key = " +  key);
         // 正则翻译
         res = I18N[lang][component].regexp;
         if (res) {
