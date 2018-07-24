@@ -63,6 +63,7 @@ I18N.conf = {
      */
     reIgnoreClasses: [
         "work-item-title", // 工单列表中的标题列
+        "work-item-state-cell", // 工单列表中的状态列
         "markdown-render-area",  // markdown 文本渲染区域
     ],
 };
@@ -145,7 +146,7 @@ I18N.zh = {
             "Business Value": "商业价值",
 
             "Cancel": "取消",
-            "Capacity and burndown are based on the days your team works.": "将基于此设置来计算团队工作量和燃尽图",
+            "Capacity and burndown are based on the days your team works.": "将基于此设置来计算团队工作容量和燃尽图",
             "Card reordering": "卡片排序方式",
             "Cards": "卡片",
             "Change": "切换页面",
@@ -168,6 +169,7 @@ I18N.zh = {
             "Code": "代码",
             // "Code": "代码动态",s
             "Color": "颜色",
+            "Column": "列",
             "Column name": "列名称",
             "Column Options": "列设置",
             "Column options": "列设置",
@@ -528,7 +530,7 @@ I18N.zh = {
             "The target date for completing the feature": "完成特性的目标日期",
             "This account": "本账户内搜索",
             "This project": "本项目内搜索",
-            "Thursday":"星期四",
+            "Thursday": "星期四",
             "Time Criticality": "时间紧迫性",
             //"Time range for showing activity data": "",
             "Title": "标题",
