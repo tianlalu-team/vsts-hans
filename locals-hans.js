@@ -191,6 +191,7 @@ I18N.zh = {
             "Create link": "创建链接",
             "Create new project": "创建一个新项目",
             "Create project": "新建项目",
+            'Create query': '新建筛选器',
             "created": "新建的",
             "Created Date": "创建日期",
             "Cumulative flow": "累积流",
@@ -231,6 +232,7 @@ I18N.zh = {
             "Edit page": "编辑页面",
             "Effort": "工作量",
             "Effort (Hours)": "工作量(小时)",
+            'Email': '通过邮件发送',
             "Email...": "通过邮件发送...",
             "Email work item": "发送到邮件",
             "Emphasize selected tags using colors. Only one color applies to a tag at a time.": "使用颜色强调标签，一个标签只能选择一个颜色。",
@@ -271,6 +273,7 @@ I18N.zh = {
 
             "General": "常规",
             "Get help": "获取帮助",
+            'Get started with your product backlog': '从产品待办清单开始',
 
             "Help": "帮助",
             "Hide": "隐藏",
@@ -301,6 +304,7 @@ I18N.zh = {
 
             "Last built": "最近一次运行",
             "Learn more about @mentions": "了解有关 @提到 的更多信息",
+            'Learn more about backlogs': '了解有关待办清单的更多信息',
             "Learn more about following": "详细了解以下内容",
             "Learn more about the bug management setting.": "了解有关BUG管理的相关设置(英文)",
             "Leave": "离开",
@@ -359,6 +363,8 @@ I18N.zh = {
             "No tags available": "当前没有任何标签",
             "No types available": "当前没有任何工单类型",
             "No states available": "当前没有任何工单状态",
+            'No work items match your filter': '哦哟，你的筛选条件什么也查不到咧(^-^偶尔也皮一下)',
+            'No work scheduled yet': '还没有工作安排',
 	    "Note":"说明",
             "Notification settings": "通知设置",
             //"Number of Commits per day": "",
@@ -368,6 +374,7 @@ I18N.zh = {
             "On": "开启",
             "OK": "确定",
             "Open in Queries": "筛选器中打开",
+            'Open filtered view in Queries': '在筛选器中打开筛选的结果',
             "Open selected items in Queries": "在查询中打开所选项目",
             "Operators": "操作符",
             "Original Estimate": "初步估计",
@@ -556,6 +563,7 @@ I18N.zh = {
             "Unsaved Changes": "未保存的数据更改",
             "Upload file(s)": "上传文件",
             "Usage": "使用详情",
+            'Use the "New Work Item" command to create and prioritize work items': '使用“新建工单”命令创建工单并设置其优先级',
             "User Story": "用户故事",
 
             "Value area": "价值范围",
