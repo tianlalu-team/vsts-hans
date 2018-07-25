@@ -64,6 +64,7 @@ I18N.conf = {
     reIgnoreClasses: [
         "work-item-title", // 工单列表中的标题列
         "work-item-state-cell", // 工单列表中的状态列
+		"workitem-state-value", // 待办页面工单状态列
         "markdown-render-area",  // markdown 文本渲染区域
     ],
 };
