@@ -80,6 +80,7 @@ I18N.zh = {
             "7-day pass rate": "最近7天成功率",
 
             "Acceptance Criteria": "验收标准",
+            "Acceptance tests pass": "验收测试通过",
             "Accepted By": "由他确认",
             "Accepted Date": "确认日期",
             "Actions": "操作",
@@ -112,6 +113,7 @@ I18N.zh = {
             "Assessment of the effect of the bug on the project": "评估BUG对项目所产生的影响",
             "Assigned To": "指派给",
             "Assigned to": "指派给",
+            "Assigned to edited": "修改指派人",
             "Assigned to me": "指派给我",
             "Assigned to filter": "指派过滤",
             "Attachments": "附件",
@@ -177,6 +179,7 @@ I18N.zh = {
             "Columns": "列",
             "Columns visualize the flow of work across the board.": "使用列来全面可视化定义工作流程",
             "completed": "已完成的",
+            "Completed testing for this test suite": "完成了此测试集合的测试",
             "Commits": "查看提交",
             "Commit": "提交",
             "Completed": "完成",
@@ -284,6 +287,7 @@ I18N.zh = {
             "How to see the bug. End by contrasting expected with actual behavior.": "清晰的描述BUG如何重现的步骤。并且在最后，说明预期行为与实际行的对比。",
 
             "Implementation": "实现",
+            "Implementation started": "开始进行需求实现",
             "Import": "导入",
             "Importance to business": "对业务的重要性",
             //"In Progress": "处理中(In Progress)",
@@ -303,6 +307,8 @@ I18N.zh = {
             "Keyboard shortcuts": "键盘快捷键",
 
             "Last built": "最近一次运行",
+            "Last seven days": "过去七天",
+            "Last thirty days": "过去三十天",
             "Learn more about @mentions": "了解有关 @提到 的更多信息",
             'Learn more about backlogs': '了解有关待办清单的更多信息',
             "Learn more about following": "详细了解以下内容",
@@ -335,6 +341,7 @@ I18N.zh = {
             "More Actions...": "更多...",
             "More save options": "更多保存选项",
             "Move to team project": "移动到团队项目",
+            "Moved to the backlog": "转移到待办清单",
             "My activity": "我的活动",
             "My accounts": "我的账户",
             "My organizations": "我的组织",
@@ -352,6 +359,8 @@ I18N.zh = {
             "New page": "新建页面",
             "New query": "新建筛选器",
             "New Sprint": "新建冲刺计划",
+            "New test plan": "新建测试计划",
+            "New test suite": "新建测试集合",
             "New work item": "新建工单",
             "New Work Item": "新建工单",
             "Next work item in the \"Assigned to me\" tab (Alt + N)": "\"指派给我\"页面的下一个工单 (Alt + N)",
@@ -370,9 +379,11 @@ I18N.zh = {
             //"Number of Commits per day": "",
             "Numbered list": "有序列表",
 
+            "Obsolete": "已过期",
             "Off": "关闭",
             "On": "开启",
             "OK": "确定",
+            "Older": "更早以前",
             "Open in Queries": "筛选器中打开",
             'Open filtered view in Queries': '在筛选器中打开筛选的结果',
             "Open selected items in Queries": "在查询中打开所选项目",
@@ -404,6 +415,7 @@ I18N.zh = {
             "Queued": "队列中",
             "Quickly take action on items where you have been @mentioned.": "您可以快速对@您的工单开展工作。",
 
+            "Reactivated": "重新激活",
             "Readme": "自述",
             "Reason": "原因",
             "Recycle Bin": "回收站",
@@ -491,6 +503,7 @@ I18N.zh = {
             "System Info": "系统信息",
 
             "Tag": "标签",
+            "Tag added": "添加标签",
             "Tag colors": "标签颜色",
             "Tags": "标签",
             "Tags": "标签",
@@ -505,6 +518,7 @@ I18N.zh = {
             "Test Case": "测试用例",
             //"Test Plans*" : "测试计划*",
             "Test Plan": "测试计划",
+            "Test plan deactivated": "停用测试计划",
             "Test Suite": "测试套件(Test Suite)",
             "Testing": "测试",
             "There are no links in this group.": "此组中没有链接。",
@@ -548,6 +562,7 @@ I18N.zh = {
             //"Time range for showing activity data": "",
             "Title": "标题",
 	    "To":"收件人",
+            "Today": "今天",
             "to get updates about the items you want to track.": "获取跟进的工单的进度更新。",
             "Triggered by": "触发",
             "Tuesday": "星期二",
@@ -579,14 +594,18 @@ I18N.zh = {
             "Working days": "工作日",
             "Working with bugs": "BUG处理",
             "Work first on items with lower-valued stack rank. Set in triage.": "优先处理较低堆栈等级的项目",
+            "Work halted": "暂停工作",
             "What to do, pointers to resources and inputs, design notes, exit criteria": "该怎么做，指明资源和输入条件、设计说明、以及完成标准",
             "Work Items": "工单",
+            "Work item link was added": "增加工单关联",
             "Work item process": "工作组织流程",
             "Work items follow the backlog order when changing columns.": "更改列时，工单按照待办清单中的顺序排序。",
             "Work items reorder when changing columns, and the backlog reflects the new order.": "更改工单所处的列时将重新排序，并将最新的排序同步到待办清单中。",
+            "Work started": "开始工作",
 
             // X
 
+            "Yesterday": "昨天",
             "You can restore deleted work items from the Recycle Bin until they are permanently deleted based on auto-delete settings (disabled).": "在它们根据自动删除设置（已禁用）被永久删除之前，您都可以从回收站还原已删除的工作项。",
             "You have modified this work item.  Close and lose changes?": "您已经修改了工单，关闭此页面会导致修改丢失，确认吗？",
             "You have unsaved changes made to the settings which will be lost. Are you sure you want to discard these changes?": "您有未保存的设置更改即将丢失，您确认要放弃这些更改关闭窗口吗?",
@@ -598,6 +617,43 @@ I18N.zh = {
             [/(\d+) working days/, "$1 个工作日"],
             [/(\d+) of (\d+) Features completed/, "$2 个特性中已完成 $1 个"],
 	    [/(\d+)\/(\d+) characters/, "$1/$2 个字符"],
+	    [/Set to (New|Active) state/, "设置状态为 '$1'"],
+	    [/[aA]dded link/, "增加了关联"],
+	    [/[aA]dded Child link/, "增加了子关联"],
+	    [/[aA]dded Parent link/, "增加了父级关联"],
+	    [/[dD]eleted link/, "移除了关联"],
+	    [/[dD]eleted Child link/, "移除了子关联"],
+	    [/[dD]eleted Parent link/, "移除了父级关联"],
+	    [/[aA]dded comment/, "发表了讨论"],
+	    [/[aA]dded Tests link/, "增加了测试关联"],
+	    [/[mM]ade other changes/, "进行了其他信息的变更"],
+	    [/[cC]hanged state from ([\s\S]+) to ([^,]+)/, "将工单状态由 '$1' 修改为 '$2'"],
+	    [/[cC]hanged type from ([\s\S]+) to ([^,]+)/, "将工单类型由 '$1' 修改为 '$2'"],
+	    [/[cC]hanged ([\s\S]+) to ([\s\S]+)/, "将 '$1' 修改为 '$2'"],
+	    [/[cC]hanged Description/, "修改了描述"],
+	    [/[cC]hanged Tags/, "修改了标签"],
+	    [/[mM]ade field changes/, "修改了一些字段信息"],
+	    [/[aA]dded Tested By link/, "增加了关联测试"],
+	    [/[cC]reated the (Task|User Story|Test Suite|Test Plan|Test Case|Epic|Issue)/, function(all, wit){
+            if(wit === 'Task')
+                wit = '新任务';
+            if(wit === 'User Story')
+                wit = '用户故事';
+            if(wit === 'Test Suite')
+                wit = '测试集合';
+            if(wit === 'Test Plan')
+                wit = '测试计划';
+            if(wit === 'Epic')
+                wit = '史诗故事';
+            if(wit === 'Issue')
+                wit = '问题';
+            if(wit === 'Feature')
+                wit = '特性';
+            if(wit === 'Test Case')
+                wit = '测试用例';
+    
+                return `创建了${wit}`;
+            }],
         ]
     },
 
