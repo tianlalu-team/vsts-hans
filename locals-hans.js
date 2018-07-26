@@ -614,7 +614,7 @@ I18N.zh = {
         },
         "regexp": [
             [/by (\d+) authors/, "由 $1 个作者提交"],
-            [/(\d+) comments?/, "$1 条讨论话题"],
+            [/^(\d+) comments?$/, "$1 条讨论话题"],
             [/Planned Effort: (\d+|-)/, "计划工作量: $1"],
             [/(\d+) working days/, "$1 个工作日"],
             [/(\d+) of (\d+) Features completed/, "$2 个特性中已完成 $1 个"],
