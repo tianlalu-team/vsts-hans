@@ -335,7 +335,7 @@ I18N.zh = {
             "More Actions...": "更多...",
             "More save options": "更多保存选项",
             "Move to team project": "移动到团队项目",
-            "My activity": "看不懂的(My activity)",
+            "My activity": "我的活动",
             "My accounts": "我的账户",
             "My organizations": "我的组织",
             "My profile": "个人档案",
