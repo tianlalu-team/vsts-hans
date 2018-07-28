@@ -129,7 +129,7 @@ I18N.zh = {
             "Completed": "完成",
             "Completed Work Items": "已完结的工单",
             "Comment": "注释",
-	    "Comment added":"发表讨论",
+	    	"Comment added":"发表讨论",
             "Commits": "提交",
             "Configure team settings": "团队设置",
             "Confirm": "确认",
@@ -198,7 +198,7 @@ I18N.zh = {
             "Existing item": "现有的项",
             "Exit full screen mode": "退出全屏模式",
             "Exit full screen mode (z)": "退出全屏模式",
-	    "External link was added": "增加外部关联",
+	    	"External link was added": "增加外部关联",
 
             "Favorites": "收藏",
             "Feature": "特性",
@@ -321,7 +321,7 @@ I18N.zh = {
             "No states available": "当前没有任何工单状态",
             'No work items match your filter': '哦哟，你的筛选条件什么也查不到咧(^-^偶尔也皮一下)',
             'No work scheduled yet': '还没有工作安排',
-	    "Note":"说明",
+	    	"Note":"说明",
             "Notification settings": "通知设置",
             //"Number of Commits per day": "",
             "Numbered list": "有序列表",
@@ -406,9 +406,9 @@ I18N.zh = {
             "Security": "安全",
             "See only the backlogs your team manages.": "只能看到您的团队参与的待办事项。",
             "Select days": "选择工作日",
-	    "Selected Work Items":"已选择的工单",
-	    "Send":"发送",
-	    "Send work items in email": "通过邮件发送工单",
+	    	"Selected Work Items":"已选择的工单",
+	    	"Send":"发送",
+	    	"Send work items in email": "通过邮件发送工单",
             "Set your team's preference for how they manage bugs. Your selection determines where bugs appear in the hierarchy and on backlogs and boards.": "设置您的团队对如何管理错误的偏好。您的选择决定了层次结构中以及积压和板上出现错误的位置。",
             "Settings": "设置",
             "Severity": "严重性",
@@ -439,7 +439,7 @@ I18N.zh = {
             "Stories Board": "用户故事看板",
             "Stories": "用户故事",
             "Story Points": "故事点",
-	    "Subject":"主题",
+	    	"Subject":"主题",
             "succeeded": "成功",
             "Sunday": "星期日",
             "Suggestions": "建议",
@@ -508,7 +508,7 @@ I18N.zh = {
             "Time Criticality": "时间紧迫性",
             //"Time range for showing activity data": "",
             "Title": "标题",
-	    "To":"收件人",
+	    	"To":"收件人",
             "Today": "今天",
             "to get updates about the items you want to track.": "获取跟进的工单的进度更新。",
             "Triggered by": "触发",
@@ -563,44 +563,45 @@ I18N.zh = {
             [/Planned Effort: (\d+|-)/, "计划工作量: $1"],
             [/(\d+) working days/, "$1 个工作日"],
             [/(\d+) of (\d+) Features completed/, "$2 个特性中已完成 $1 个"],
-	    [/(\d+)\/(\d+) characters/, "$1/$2 个字符"],
-	    [/Set to (New|Active|Closed) state/, "设置状态为 '$1'"],
-	    [/[aA]dded link/, "增加了关联"],
-	    [/[aA]dded Child link/, "增加了子关联"],
-	    [/[aA]dded Parent link/, "增加了父级关联"],
-	    [/[dD]eleted link/, "移除了关联"],
-	    [/[dD]eleted Child link/, "移除了子关联"],
-	    [/[dD]eleted Parent link/, "移除了父级关联"],
-	    [/[aA]dded comment/, "发表了讨论"],
-	    [/[aA]dded Tests link/, "增加了测试关联"],
-	    [/[mM]ade other changes/, "进行了其他信息的变更"],
-	    [/[cC]hanged state from ([\s\S]+) to ([^,]+)/, "将工单状态由 '$1' 修改为 '$2'"],
-	    [/[cC]hanged type from ([\s\S]+) to ([^,]+)/, "将工单类型由 '$1' 修改为 '$2'"],
-	    [/[cC]hanged ([\s\S]+) to ([\s\S]+)/, "将 '$1' 修改为 '$2'"],
-	    [/[cC]hanged Description/, "修改了描述"],
-	    [/[cC]hanged Tags/, "修改了标签"],
-	    [/[mM]ade field changes/, "修改了一些字段信息"],
-	    [/[aA]dded Tested By link/, "增加了关联测试"],
-	    [/[cC]reated the (Task|User Story|Test Suite|Test Plan|Test Case|Epic|Issue)/, function(all, wit){
-            if(wit === 'Task')
-                wit = '新任务';
-            if(wit === 'User Story')
-                wit = '用户故事';
-            if(wit === 'Test Suite')
-                wit = '测试集合';
-            if(wit === 'Test Plan')
-                wit = '测试计划';
-            if(wit === 'Epic')
-                wit = '史诗故事';
-            if(wit === 'Issue')
-                wit = '问题';
-            if(wit === 'Feature')
-                wit = '特性';
-            if(wit === 'Test Case')
-                wit = '测试用例';
+	    	[/(\d+)\/(\d+) characters/, "$1/$2 个字符"],
+	    	[/Set to (New|Active|Closed) state/, "设置状态为 '$1'"],
+	    	[/[aA]dded link/, "增加了关联"],
+	    	[/[aA]dded Child link/, "增加了子关联"],
+	    	[/[aA]dded Parent link/, "增加了父级关联"],
+	   		[/[dD]eleted link/, "移除了关联"],
+	   		[/[dD]eleted Child link/, "移除了子关联"],
+	   		[/[dD]eleted Parent link/, "移除了父级关联"],
+	   		[/[aA]dded comment/, "发表了讨论"],
+	   		[/[aA]dded Tests link/, "增加了测试关联"],
+	   		[/[mM]ade other changes/, "进行了其他信息的变更"],
+	   		[/[cC]hanged state from ([\s\S]+) to ([^,]+)/, "将工单状态由 '$1' 修改为 '$2'"],
+	   		[/[cC]hanged type from ([\s\S]+) to ([^,]+)/, "将工单类型由 '$1' 修改为 '$2'"],
+	   		[/[cC]hanged ([\s\S]+) to ([\s\S]+)/, "将 '$1' 修改为 '$2'"],
+	   		[/[cC]hanged Description/, "修改了描述"],
+	   		[/[cC]hanged Tags/, "修改了标签"],
+	   		[/[mM]ade field changes/, "修改了一些字段信息"],
+	   		[/[aA]dded Tested By link/, "增加了关联测试"],
+	   		[/[cC]reated the (Task|User Story|Test Suite|Test Plan|Test Case|Epic|Issue)/, function(all, wit) {
+            	if(wit === 'Task')
+            	    wit = '新任务';
+            	if(wit === 'User Story')
+            	    wit = '用户故事';
+            	if(wit === 'Test Suite')
+            	    wit = '测试集合';
+            	if(wit === 'Test Plan')
+            	    wit = '测试计划';
+            	if(wit === 'Epic')
+            	    wit = '史诗故事';
+            	if(wit === 'Issue')
+            	    wit = '问题';
+            	if(wit === 'Feature')
+            	    wit = '特性';
+            	if(wit === 'Test Case')
+            	    wit = '测试用例';
 
-                return `创建了${wit}`;
-            }],
+            	    return `创建了${wit}`;
+				}
+			],
         ]
     },
 
