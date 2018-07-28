@@ -129,7 +129,7 @@ I18N.zh = {
             "Completed": "完成",
             "Completed Work Items": "已完结的工单",
             "Comment": "注释",
-	    "Comment added":"发表讨论",	
+	    "Comment added":"发表讨论",
             "Commits": "提交",
             "Configure team settings": "团队设置",
             "Confirm": "确认",
@@ -144,7 +144,8 @@ I18N.zh = {
             "Created Date": "创建日期",
             "Cumulative flow": "累积流",
             "Cumulative flow diagram": "累积流图(CFD)",
-            "Current": "当前",
+			"Current": "当前",
+			"Current status": "当前状态",
             "Customize": "个性化",
 
             "Dashboards": "仪表板",
@@ -294,7 +295,7 @@ I18N.zh = {
             "My profile": "个人档案",
 
             "Name": "名称",
-            "New": "新建", // TODO: 新建按钮 
+            "New": "新建", // TODO: 新建按钮
             //"New": "待确认(New)",
             "New = for triage; Active = not yet fixed; Resolved = fixed not yet verified; Closed = fix verified.": "New = 等待; Active = 尚未修复; Resolved = 已修复但未验证; Closed = 修复得到验证",
             "New = New work not yet activated; Active = work remains to be done; Closed = tested and checked in.": "New = 未激活的新任务; Active = 任务进行中未完成; Closed = 经过测试并签入",
@@ -597,7 +598,7 @@ I18N.zh = {
                 wit = '特性';
             if(wit === 'Test Case')
                 wit = '测试用例';
-    
+
                 return `创建了${wit}`;
             }],
         ]
