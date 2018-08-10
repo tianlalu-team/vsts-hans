@@ -9,7 +9,10 @@ I18N.conf = {
         "work-item-title", // 工单列表中的标题列
         "work-item-state-cell", // 工单列表中的状态列
         "workitem-state-value", // 待办页面工单状态列
-        "markdown-render-area",  // markdown 文本渲染区域
+		"markdown-render-area",  // markdown 文本渲染区域
+		'vc-files-tree',		// 代码浏览器左侧目录结构树
+		'file-name',				// 代码浏览器中的文件名
+		'path-explorer-search-results', // 路径快速搜索结果
     ],
 };
 
@@ -115,7 +118,8 @@ I18N.zh = {
             "Choose the expected reorder behavior for your work items.": "选择工单的预期排序方式。",
             "Classification": "分类",
             "Clear": "清除",
-            "Click": "点击",
+			"Click": "点击",
+			'Clone': '克隆',
             "Close": "关闭",
             "Close (ESC)": "关闭 (ESC)",
             "closed": "关闭的",
@@ -143,11 +147,13 @@ I18N.zh = {
             "Configure team settings": "团队设置",
             "Confirm": "确认",
             "Copy to clipboard": "复制到剪贴板",
-            "Core fields": "核心字段",
+			"Core fields": "核心字段",
+			'Contents': '内容',
+			'Create a pull request': '创建拉取请求',
             "Create copy of work item...": "创建工单副本",
             "Create link": "创建链接",
             "Create new project": "创建一个新项目",
-            "Create project": "新建项目",
+			"Create project": "新建项目",
             'Create query': '新建筛选器',
             "created": "新建的",
             "Created Date": "创建日期",
@@ -266,7 +272,8 @@ I18N.zh = {
             "Keep an eye on important work": "请时刻关注重要的工作",
             "Keyboard shortcuts": "键盘快捷键",
 
-            "Last built": "最近一次运行",
+			"Last built": "最近一次运行",
+			'Last change': '更新时间',
             "Last seven days": "过去七天",
             "Last thirty days": "过去三十天",
             "Learn more about @mentions": "了解有关 @提到 的更多信息",
@@ -539,8 +546,9 @@ I18N.zh = {
             "Today": "今天",
             "to get updates about the items you want to track.": "获取跟进的工单的进度更新。",
             "Triggered by": "触发",
-            "Tuesday": "星期二",
+			"Tuesday": "星期二",
             "Type of work involved": "该工单的工作形式",
+			"Type to find a file or folder...":"快速搜索文件或文件夹",
             "Types filter": "类型过滤",
             "Types": "工单类型",
 
