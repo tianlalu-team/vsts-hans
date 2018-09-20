@@ -5,7 +5,7 @@
 // @copyright    2018, 天啦噜天团 (https://tianlalu-team.github.io/)
 // @license      MIT
 // @icon         https://vsassetscdn.azure.cn/content/icons/favicon.ico
-// @version      1.0.0
+// @version      1.0.1
 // @author       天啦噜天团
 // @homepageURL  https://tianlalu-team.github.io/
 // @updateURL    https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/vsts-hans.user.js
