@@ -11,6 +11,7 @@
 // @updateURL    https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/vsts-hans.user.js
 // @downloadURL  https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/vsts-hans.user.js
 // @match        https://*.visualstudio.com/*
+// @match        https://dev.azure.com/*
 // @require      https://raw.githubusercontent.com/tianlalu-team/vsts-hans/master/locals-hans.js
 // @run-at       document-start
 // @grant        unsafeWindow
