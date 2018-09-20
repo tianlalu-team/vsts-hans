@@ -378,6 +378,7 @@ I18N.zh = {
 
             "Packages": "程序包",
             "Pin item": "固定到快捷栏",
+	    "Pipelines": "流水线",
             "Planning": "计划",
             "Policy requirement": "策略要求",
             "Priority": "优先级",
